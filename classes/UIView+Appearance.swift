@@ -10,14 +10,14 @@ import UIKit
 
 extension UIView{
     
-    func setRoundAppearance( _ borderColor:UIColor, borderWidth: CGFloat) {
+    public func setRoundAppearance( _ borderColor:UIColor, borderWidth: CGFloat) {
         self.layer.cornerRadius=self.frame.size.width * 0.5
         self.layer.borderColor=borderColor.cgColor
         self.layer.borderWidth = borderWidth
         self.layer.masksToBounds = true
     }
     
-    func setRoundAppearance( _ borderColor:UIColor, cornerRadius:CGFloat, backgroundColor:UIColor) {
+    public func setRoundAppearance( _ borderColor:UIColor, cornerRadius:CGFloat, backgroundColor:UIColor) {
         self.layer.backgroundColor=backgroundColor.cgColor
         self.layer.cornerRadius=cornerRadius
         self.layer.borderColor=borderColor.cgColor
@@ -25,7 +25,7 @@ extension UIView{
         self.layer.masksToBounds = true
     }
     
-    func setRoundAppearance( _ borderColor:UIColor, cornerRadius:CGFloat) {
+    public func setRoundAppearance( _ borderColor:UIColor, cornerRadius:CGFloat) {
         
         self.layer.cornerRadius=cornerRadius
         self.layer.borderColor=borderColor.cgColor
@@ -33,15 +33,15 @@ extension UIView{
         self.layer.masksToBounds = true
     }
      
-    func setRoundAppearance( _ borderColor:UIColor, backgroundColor:UIColor) {
+    public func setRoundAppearance( _ borderColor:UIColor, backgroundColor:UIColor) {
         self.setRoundAppearance(borderColor, cornerRadius: self.frame.size.height * 0.5, backgroundColor: backgroundColor)
     }
     
-    func setRoundAppearance( _ borderColor:UIColor) {
+    public func setRoundAppearance( _ borderColor:UIColor) {
         self.setRoundAppearance(borderColor, cornerRadius: self.frame.size.height * 0.5, backgroundColor: self.backgroundColor!)
     }
     
-    func setRoundAppearance() {
+    public func setRoundAppearance() {
         setRoundAppearance(UIColor.blue, borderWidth: 0)
     }
     

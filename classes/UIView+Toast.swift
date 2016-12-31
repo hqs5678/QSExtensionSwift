@@ -10,35 +10,35 @@ import UIKit
 
 extension UIView{
     
-    func makeToast(_ message:String){
+    public func makeToast(_ message:String){
         self.makeToast(message, duration: 0, position: CGPoint.zero, fontSize: 0, animate: true)
     }
     
-    func makeToast(_ message:String, animate:Bool){
+    public func makeToast(_ message:String, animate:Bool){
         self.makeToast(message, duration: 0, position: CGPoint.zero, fontSize: 0, animate: animate)
     }
     
-    func makeToast(_ message:String, position:CGPoint){
+    public func makeToast(_ message:String, position:CGPoint){
         self.makeToast(message, duration: 0, position: position, fontSize: 0, animate: true)
     }
     
-    func makeToast(_ message:String, duration:UInt32){
+    public func makeToast(_ message:String, duration:UInt32){
         self.makeToast(message, duration: duration, position: CGPoint.zero, fontSize: 0, animate: true)
     }
     
-    func makeToast(_ message:String, duration:UInt32, animate:Bool){
+    public func makeToast(_ message:String, duration:UInt32, animate:Bool){
         self.makeToast(message, duration: duration, position: CGPoint.zero, fontSize: 0, animate: animate)
     }
     
-    func makeToast(_ message:String, position:CGPoint, animate:Bool){
+    public func makeToast(_ message:String, position:CGPoint, animate:Bool){
         self.makeToast(message, duration: 0, position: position, fontSize: 0, animate: animate)
     }
     
-    func makeToast(_ message:String, duration:UInt32, position:CGPoint, animate:Bool){
+    public func makeToast(_ message:String, duration:UInt32, position:CGPoint, animate:Bool){
         self.makeToast(message, duration: duration, position: position, fontSize: 0, animate: animate)
     }
     
-    func makeToast(_ message:String, duration:UInt32, position:CGPoint, fontSize:CGFloat, animate:Bool){
+    public func makeToast(_ message:String, duration:UInt32, position:CGPoint, fontSize:CGFloat, animate:Bool){
         
         let toastLabel = UILabel()
         let toast = UIView()
@@ -95,7 +95,7 @@ extension UIView{
         })
     }
     
-    fileprivate func removeToast(_ toast:UIView, animate:Bool) {
+    public func removeToast(_ toast:UIView, animate:Bool) {
         if animate{
             UIView.animate(withDuration: 0.5, animations: { () -> Void in
                 toast.alpha = 0

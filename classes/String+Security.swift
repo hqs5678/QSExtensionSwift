@@ -63,7 +63,7 @@
 //    }
 //    
 //    
-//    public static func uuid() -> String {
+//    public static public func uuid() -> String {
 //        return UUID().uuidString
 //    }
 //    

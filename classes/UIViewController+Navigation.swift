@@ -10,32 +10,32 @@ import UIKit
 
 extension UIViewController{
     
-    func pushVC(_ vc: UIViewController){
+    public func pushVC(_ vc: UIViewController){
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func pushVCHidesBottomBar(_ vc: UIViewController){
+    public func pushVCHidesBottomBar(_ vc: UIViewController){
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func popVC(){
+    public func popVC(){
         if self.navigationController != nil {
             self.navigationController!.popViewController(animated: true)
         }
     }
     
-    func popRootVC(){
+    public func popRootVC(){
         if self.navigationController != nil {
             self.navigationController!.popToRootViewController(animated: true)
         }
     }
     
-    func presentVC(viewController: UIViewController, animated: Bool){
+    public func presentVC(viewController: UIViewController, animated: Bool){
         self.presentVC(viewController: viewController, animated: animated, completion: nil)
     }
     
-    func presentVC(viewController: UIViewController, animated: Bool, completion: (() -> Void)? = nil){
+    public func presentVC(viewController: UIViewController, animated: Bool, completion: (() -> Void)? = nil){
         if let nav = self.navigationController {
             nav.present(viewController, animated: animated, completion: completion)
         }
@@ -44,11 +44,11 @@ extension UIViewController{
         }
     }
     
-    func dismissVC(animated: Bool){
+    public func dismissVC(animated: Bool){
         self.dismissVC(animated: animated, completion: nil)
     }
     
-    func dismissVC(animated: Bool, completion: (() -> Void)? = nil) {
+    public func dismissVC(animated: Bool, completion: (() -> Void)? = nil) {
         if let nav = self.navigationController {
             nav.dismiss(animated: animated, completion: completion)
         }

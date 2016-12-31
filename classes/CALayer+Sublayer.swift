@@ -10,7 +10,7 @@ import UIKit
 
 extension CALayer {
     
-    func removeAllSublayers(){
+    public func removeAllSublayers(){
         let sublayers = self.sublayers
         guard sublayers != nil else {
             return

@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController{
   
-    func makeToast(_ message: String) {
+    public func makeToast(_ message: String) {
         self.navigationController?.view.makeToast(message)
     }
 }

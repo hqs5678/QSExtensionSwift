@@ -12,7 +12,7 @@ extension UILabel {
     
     // 注意!!!!!
     // 在使用富文本时使用该方法有效  在没有设置 attributedText时是不起作用的
-    func boundWithSize(_ size: CGSize) -> CGRect {
+    public func boundWithSize(_ size: CGSize) -> CGRect {
         
         return self.attributedText!.boundingRect(with: size, options: .usesLineFragmentOrigin, context: nil)
     }

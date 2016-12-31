@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    func removeAllSubviews(){
+    public func removeAllSubviews(){
         let subViews = self.subviews
         if subViews.count == 0 {
             return

@@ -10,7 +10,7 @@ import UIKit
 
 extension NSObject {
     
-    func klassName() -> String{
+    public func klassName() -> String{
         return "\(self.classForCoder)"
     }
 

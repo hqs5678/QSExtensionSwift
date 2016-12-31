@@ -10,26 +10,26 @@ import UIKit
 
 extension String{
     
-    func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
+    public func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
         let newStr:NSString = NSString(string: self)
         
         return newStr.boundingRect(with: size, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:font], context: nil)
     }
     
-    func trim() -> String {
+    public func trim() -> String {
         return self.trimmingCharacters(in: CharacterSet(charactersIn: " "))
     }
     
-    func length() -> Int {
+    public func length() -> Int {
         return (self as NSString).length
     }
     
-    func data2String(_ data:Data) -> String{
+    public func data2String(_ data:Data) -> String{
         let str = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
         return str as! String
     }
     
-    func toFArray() -> NSArray!{
+    public func toFArray() -> NSArray!{
         if self.length() > 3 {
             let array = self.components(separatedBy: ",,,")
             return array as NSArray!

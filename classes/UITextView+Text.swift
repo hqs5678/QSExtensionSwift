@@ -10,14 +10,14 @@ import UIKit
 
 extension UITextView {
     
-    func isEmpty() -> Bool {
+    public func isEmpty() -> Bool {
         if  self.text == nil || self.text?.length() == 0 {
             return true
         }
         return false
     }
     
-    func textEqualTo(_ textView: UITextView) -> Bool {
+    public func textEqualTo(_ textView: UITextView) -> Bool {
         if self.isEmpty() {
             return false
         }

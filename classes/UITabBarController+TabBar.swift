@@ -11,27 +11,27 @@ import UIKit
 extension UITabBarController{
     
     // 淡入
-    func fadeInTabBarWithDuration(_ duration:TimeInterval){
+    public func fadeInTabBarWithDuration(_ duration:TimeInterval){
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(duration)
         self.tabBar.alpha = 1.0
         UIView.commitAnimations()
     }
-    func fadeInTabBar(){
+    public func fadeInTabBar(){
         fadeInTabBarWithDuration(0.2)
     }
     // 淡出
-    func fadeOutTabBarWithDuration(_ duration:TimeInterval){
+    public func fadeOutTabBarWithDuration(_ duration:TimeInterval){
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(duration)
         self.tabBar.alpha = 0.0
         UIView.commitAnimations()
     }
-    func fadeOutTabBar(){
+    public func fadeOutTabBar(){
         fadeOutTabBarWithDuration(0.2)
     }
     // 推入
-    func pushInTabBarWithDuration(_ duration:TimeInterval){
+    public func pushInTabBarWithDuration(_ duration:TimeInterval){
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(duration)
         var frame = self.tabBar.frame
@@ -39,11 +39,11 @@ extension UITabBarController{
         self.tabBar.frame = frame
         UIView.commitAnimations()
     }
-    func pushInTabBar(){
+    public func pushInTabBar(){
         pushInTabBarWithDuration(0.2)
     }
     // 推出
-    func pushOutTabBarWithDuration(_ duration:TimeInterval){
+    public func pushOutTabBarWithDuration(_ duration:TimeInterval){
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(duration)
         var frame = self.tabBar.frame
@@ -51,7 +51,7 @@ extension UITabBarController{
         self.tabBar.frame = frame
         UIView.commitAnimations()
     }
-    func pushOutTabBar(){
+    public func pushOutTabBar(){
         pushOutTabBarWithDuration(0.2)
     }
 }
