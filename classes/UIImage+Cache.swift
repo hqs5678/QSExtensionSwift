@@ -12,16 +12,16 @@ import UIKit
 extension UIImage{
   
     
-    func writeToFile(_ filePath:String){
+    public func writeToFile(_ filePath:String){
         let data = UIImagePNGRepresentation(self)!
         try? data.write(to: URL(fileURLWithPath: filePath), options: [])
     }
     
-    func saveToFile(_ filePath: String){
+    public func saveToFile(_ filePath: String){
         writeToFile(filePath)
     }
     
-    func data() -> Data?{
+    public func data() -> Data?{
        return UIImagePNGRepresentation(self)
     }
 }

@@ -10,14 +10,14 @@ import UIKit
 
 extension UITextField {
     
-    func isEmpty() -> Bool {
+    public func isEmpty() -> Bool {
         if  self.text == nil || self.text?.length() == 0 {
             return true
         }
         return false
     }
     
-    func textEqualTo(_ textField: UITextField) -> Bool {
+    public func textEqualTo(_ textField: UITextField) -> Bool {
         if self.isEmpty() {
             return false
         }
@@ -31,11 +31,11 @@ extension UITextField {
         }
     }
     
-    func setPlaceholderTextColor(_ color: UIColor) {
+    public func setPlaceholderTextColor(_ color: UIColor) {
         self.attributedPlaceholder = NSMutableAttributedString(string: self.placeholder!, attributes: [NSForegroundColorAttributeName : color])
     }
     
-    func textWillChangedWithFloatNumber(replaceString: String) -> Bool {
+    public func textWillChangedWithFloatNumber(replaceString: String) -> Bool {
         
         let number = "1234567890."
         var dotCount = 0
@@ -86,7 +86,7 @@ extension UITextField {
         return true
     }
     
-    func textWillChangedWithIntegerNumber(replaceString: String) -> Bool {
+    public func textWillChangedWithIntegerNumber(replaceString: String) -> Bool {
         
         let number = "1234567890"
         

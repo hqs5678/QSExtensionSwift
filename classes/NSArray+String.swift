@@ -10,7 +10,7 @@ import UIKit
 
 extension NSArray {
     
-    func toFString() -> String{
+    public func toFString() -> String{
         
         if self.count  == 0 {
             return ""

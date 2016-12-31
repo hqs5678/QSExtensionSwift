@@ -10,7 +10,7 @@ import UIKit
 
 extension NSDictionary{
     
-    func toJsonString() -> String{
+    public func toJsonString() -> String{
         let data:Data = try! JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions())
         
         return data.toString()

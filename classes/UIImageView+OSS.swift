@@ -11,11 +11,11 @@ import UIKit
 
 extension UIImageView{
     
-//    func setOSSObjectKey(_ objectKey: String){
+//    public func setOSSObjectKey(_ objectKey: String){
 //        self.setOSSObjectKey(objectKey, placeholderImage: nil)
 //    }
 //    
-//    func setOSSObjectKey(_ objectKey: String, placeholderImage: UIImage?){
+//    public func setOSSObjectKey(_ objectKey: String, placeholderImage: UIImage?){
 //        setOSSObjectKey(objectKey, placeholderImage: placeholderImage, downloadProgress: { (progress) in
 //            
 //        }) { (data) in
@@ -26,7 +26,7 @@ extension UIImageView{
 //        }
 //    }
 //    
-//    func setOSSObjectKey(_ objectKey: String, placeholderImage: UIImage?, downloadProgress: @escaping ((_ progress: CGFloat) -> ()), completion: @escaping ((_ data: Data) -> Void)){
+//    public func setOSSObjectKey(_ objectKey: String, placeholderImage: UIImage?, downloadProgress: @escaping ((_ progress: CGFloat) -> ()), completion: @escaping ((_ data: Data) -> Void)){
 //        
 //        let fileName = objectKey.md5
 //        let cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0] + "/"

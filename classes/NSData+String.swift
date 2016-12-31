@@ -11,12 +11,12 @@ import UIKit
 extension Data{
     
     
-    func toString() -> String{
+    public func toString() -> String{
         let str = NSString(data: self, encoding: String.Encoding.utf8.rawValue)
         return str as! String
     }
     
-    func toJsonObject() -> AnyObject {
+    public func toJsonObject() -> AnyObject {
         return try! JSONSerialization.jsonObject(with: self, options: .allowFragments) as AnyObject
     }
     

@@ -10,7 +10,7 @@ import UIKit
 
 extension UISearchBar {
     
-    func setTextColor(color: UIColor){
+    public func setTextColor(color: UIColor){
         let searchField = self.value(forKey: "_searchField") as? UITextField
         // 输入文本颜色
         searchField?.textColor = color

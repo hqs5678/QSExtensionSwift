@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     
-    func roundedCornerImage(radius: CGFloat, _ sizetoFit: CGSize) -> UIImage {
+    public func roundedCornerImage(radius: CGFloat, _ sizetoFit: CGSize) -> UIImage {
         let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: sizetoFit)
         
         UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
@@ -26,7 +26,7 @@ extension UIImage {
         return output!
     }
     
-    func circleImage(_ sizetoFit: CGSize) -> UIImage {
+    public func circleImage(_ sizetoFit: CGSize) -> UIImage {
         let radius: CGFloat = sizetoFit.width * 0.5
         return roundedCornerImage(radius: radius, sizetoFit)
     }

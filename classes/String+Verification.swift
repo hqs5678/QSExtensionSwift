@@ -11,7 +11,7 @@ import UIKit
 extension String{
 
     // 判断是否合法的手机号
-    func isPhoneNumber() -> Bool{
+    public func isPhoneNumber() -> Bool{
         
         let regex = "1+[0-9]{10}"
         
@@ -21,7 +21,7 @@ extension String{
     }
     
     // 判断是否合法邮箱
-    func isEmail() -> Bool {
+    public func isEmail() -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         
         let emailTest: NSPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)

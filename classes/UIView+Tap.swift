@@ -19,7 +19,7 @@ extension UIView {
         setTapHandle(tmpClass)
     }
     
-    @objc fileprivate func onTapGestureRecognizerHandle(_ tap: UITapGestureRecognizer){
+    public func onTapGestureRecognizerHandle(_ tap: UITapGestureRecognizer){
         
         let tmpClass = objc_getAssociatedObject(self, &AssociatedKeys.tapHandlePer) as? TmpHandleClass
         if tmpClass != nil {
@@ -27,14 +27,12 @@ extension UIView {
         }
     }
     
-    fileprivate func setTapHandle(_ tapHandle: TmpHandleClass){
+    public func setTapHandle(_ tapHandle: TmpHandleClass){
         objc_setAssociatedObject(self, &AssociatedKeys.tapHandlePer, tapHandle, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
- 
- 
  }
  
-class TmpHandleClass {
+ public class TmpHandleClass {
     
     var tapHandle = {
         (tap: UITapGestureRecognizer) -> Void in return

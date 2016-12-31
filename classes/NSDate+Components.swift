@@ -67,7 +67,7 @@ extension Date{
         return dateStringWithFormate(formate: "ss")
     }
     
-    private func dateStringWithFormate(formate: String) -> String {
+    public func dateStringWithFormate(formate: String) -> String {
         let dateFormatter: DateFormatter = DateFormatter()
         dateFormatter.dateFormat = formate
         

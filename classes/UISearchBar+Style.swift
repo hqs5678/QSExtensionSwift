@@ -20,7 +20,7 @@ extension UILabel {
     }
     
     // 设置行间距
-    func setTextLineSpacing(_ lineSpacing: CGFloat) {
+    public func setTextLineSpacing(_ lineSpacing: CGFloat) {
         
         let len = (self.text! as NSString).length
         let range = NSMakeRange(0, len)
@@ -39,7 +39,7 @@ extension UILabel {
     }
     
     // 首行缩进
-    func setFirstLineIndentation(_ indentation: CGFloat) {
+    public func setFirstLineIndentation(_ indentation: CGFloat) {
         
         let len = (self.text! as NSString).length
         let range = NSMakeRange(0, len)
