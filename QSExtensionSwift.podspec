@@ -25,8 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-QSExtensionSwift
-Extension
+
+                    QSExtensionSwift
+                    Extension
+
                    DESC
 
   s.homepage     = "https://github.com/hqs5678/QSExtensionSwift"
@@ -95,7 +97,7 @@ Extension
   s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "Classes/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -134,6 +136,7 @@ Extension
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto/CommonCrypto.h" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
