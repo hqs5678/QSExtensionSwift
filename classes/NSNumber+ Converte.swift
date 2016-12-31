@@ -10,45 +10,45 @@ import UIKit
 
 extension Int {
   
-    var floatValue: CGFloat {
+    public var floatValue: CGFloat {
         return CGFloat(self)
     }
     
-    var stringValue: String {
+    public var stringValue: String {
         return "\(self)"
     }
     
-    var uIntValue: UInt {
+    public var uIntValue: UInt {
         return UInt(self)
     }
 }
 
 extension UInt {
     
-    var floatValue: CGFloat {
+    public var floatValue: CGFloat {
         return CGFloat(self)
     }
     
-    var stringValue: String {
+    public var stringValue: String {
         return "\(self)"
     }
     
-    var intValue: Int {
+    public var intValue: Int {
         return Int(self)
     }
 }
 
 extension UInt32 {
     
-    var floatValue: CGFloat {
+    public var floatValue: CGFloat {
         return CGFloat(self)
     }
     
-    var stringValue: String {
+    public var stringValue: String {
         return "\(self)"
     }
     
-    var intValue: Int {
+    public var intValue: Int {
         return Int(self)
     }
 }
@@ -56,22 +56,22 @@ extension UInt32 {
 
 extension CGFloat {
     
-    var intValue: Int {
+    public var intValue: Int {
         return Int(self)
     }
     
-    var stringValue: String {
+    public var stringValue: String {
         return "\(self)"
     }
 }
 
 extension String {
     
-    var intValue: Int {
+    public var intValue: Int {
         return Int(self)!
     }
     
-    var floatValue: CGFloat {
+    public var floatValue: CGFloat {
         return CGFloat(self.intValue)
     }
 }
