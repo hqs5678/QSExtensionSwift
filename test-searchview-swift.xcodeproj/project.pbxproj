@@ -46,7 +46,6 @@
 		BFD3730C1E17842300F29E1D /* UIView+Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E81E17842300F29E1D /* UIView+Tap.swift */; };
 		BFD3730D1E17842300F29E1D /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E91E17842300F29E1D /* UIView+Toast.swift */; };
 		BFD3730E1E17842300F29E1D /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */; };
-		BFD3730F1E17842300F29E1D /* UIViewController+SocialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372EB1E17842300F29E1D /* UIViewController+SocialData.swift */; };
 		BFD373101E17842300F29E1D /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,7 +91,6 @@
 		BFD372E81E17842300F29E1D /* UIView+Tap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Tap.swift"; sourceTree = "<group>"; };
 		BFD372E91E17842300F29E1D /* UIView+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Toast.swift"; sourceTree = "<group>"; };
 		BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
-		BFD372EB1E17842300F29E1D /* UIViewController+SocialData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SocialData.swift"; sourceTree = "<group>"; };
 		BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,7 +172,6 @@
 				BFD372E81E17842300F29E1D /* UIView+Tap.swift */,
 				BFD372E91E17842300F29E1D /* UIView+Toast.swift */,
 				BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */,
-				BFD372EB1E17842300F29E1D /* UIViewController+SocialData.swift */,
 				BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */,
 			);
 			path = Classes;
@@ -269,7 +266,6 @@
 				BFD3730E1E17842300F29E1D /* UIViewController+Navigation.swift in Sources */,
 				BFD373031E17842300F29E1D /* UISearchBar+Style.swift in Sources */,
 				BFD372F81E17842300F29E1D /* String+Verification.swift in Sources */,
-				BFD3730F1E17842300F29E1D /* UIViewController+SocialData.swift in Sources */,
 				BFD372F01E17842300F29E1D /* NSDate+Components.swift in Sources */,
 				BFD372F11E17842300F29E1D /* NSDictionary+Json.swift in Sources */,
 				BFD372EE1E17842300F29E1D /* NSArray+String.swift in Sources */,
