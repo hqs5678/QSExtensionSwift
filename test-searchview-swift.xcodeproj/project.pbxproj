@@ -12,8 +12,42 @@
 		18614E8D1E02523600E0E967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18614E8B1E02523600E0E967 /* Main.storyboard */; };
 		18614E8F1E02523600E0E967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18614E8E1E02523600E0E967 /* Assets.xcassets */; };
 		18614E921E02523600E0E967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18614E901E02523600E0E967 /* LaunchScreen.storyboard */; };
-		18614E9A1E0254AD00E0E967 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18614E991E0254AD00E0E967 /* SearchView.swift */; };
-		18614E9C1E02565700E0E967 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 18614E9B1E02565700E0E967 /* search.png */; };
+		BFD372ED1E17842300F29E1D /* CALayer+Sublayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */; };
+		BFD372EE1E17842300F29E1D /* NSArray+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CA1E17842300F29E1D /* NSArray+String.swift */; };
+		BFD372EF1E17842300F29E1D /* NSData+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CB1E17842300F29E1D /* NSData+String.swift */; };
+		BFD372F01E17842300F29E1D /* NSDate+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CC1E17842300F29E1D /* NSDate+Components.swift */; };
+		BFD372F11E17842300F29E1D /* NSDictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CD1E17842300F29E1D /* NSDictionary+Json.swift */; };
+		BFD372F21E17842300F29E1D /* NSNumber+ Converte.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CE1E17842300F29E1D /* NSNumber+ Converte.swift */; };
+		BFD372F31E17842300F29E1D /* NSObject+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CF1E17842300F29E1D /* NSObject+Class.swift */; };
+		BFD372F41E17842300F29E1D /* String+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D01E17842300F29E1D /* String+Json.swift */; };
+		BFD372F51E17842300F29E1D /* String+Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D11E17842300F29E1D /* String+Security.swift */; };
+		BFD372F61E17842300F29E1D /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D21E17842300F29E1D /* String+Size.swift */; };
+		BFD372F71E17842300F29E1D /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D31E17842300F29E1D /* String+Substring.swift */; };
+		BFD372F81E17842300F29E1D /* String+Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D41E17842300F29E1D /* String+Verification.swift */; };
+		BFD372F91E17842300F29E1D /* UIColor+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D51E17842300F29E1D /* UIColor+ST.swift */; };
+		BFD372FA1E17842300F29E1D /* UIImage+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D61E17842300F29E1D /* UIImage+Cache.swift */; };
+		BFD372FB1E17842300F29E1D /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D71E17842300F29E1D /* UIImage+Color.swift */; };
+		BFD372FC1E17842300F29E1D /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D81E17842300F29E1D /* UIImage+Resize.swift */; };
+		BFD372FD1E17842300F29E1D /* UIImage+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372D91E17842300F29E1D /* UIImage+RoundCorner.swift */; };
+		BFD372FE1E17842300F29E1D /* UIImageView+OSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372DA1E17842300F29E1D /* UIImageView+OSS.swift */; };
+		BFD372FF1E17842300F29E1D /* UILabel+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372DB1E17842300F29E1D /* UILabel+Size.swift */; };
+		BFD373001E17842300F29E1D /* UILabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372DC1E17842300F29E1D /* UILabel+Style.swift */; };
+		BFD373011E17842300F29E1D /* UILabel+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372DD1E17842300F29E1D /* UILabel+Text.swift */; };
+		BFD373021E17842300F29E1D /* UINavigationController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372DE1E17842300F29E1D /* UINavigationController+Navigation.swift */; };
+		BFD373031E17842300F29E1D /* UISearchBar+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372DF1E17842300F29E1D /* UISearchBar+Style.swift */; };
+		BFD373041E17842300F29E1D /* UITabBarController+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E01E17842300F29E1D /* UITabBarController+TabBar.swift */; };
+		BFD373051E17842300F29E1D /* UITableViewCell+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E11E17842300F29E1D /* UITableViewCell+Style.swift */; };
+		BFD373061E17842300F29E1D /* UITextField+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E21E17842300F29E1D /* UITextField+Text.swift */; };
+		BFD373071E17842300F29E1D /* UITextView+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E31E17842300F29E1D /* UITextView+Text.swift */; };
+		BFD373081E17842300F29E1D /* UIView+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E41E17842300F29E1D /* UIView+Appearance.swift */; };
+		BFD373091E17842300F29E1D /* UIView+Constaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E51E17842300F29E1D /* UIView+Constaint.swift */; };
+		BFD3730A1E17842300F29E1D /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E61E17842300F29E1D /* UIView+Frame.swift */; };
+		BFD3730B1E17842300F29E1D /* UIView+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E71E17842300F29E1D /* UIView+Subview.swift */; };
+		BFD3730C1E17842300F29E1D /* UIView+Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E81E17842300F29E1D /* UIView+Tap.swift */; };
+		BFD3730D1E17842300F29E1D /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372E91E17842300F29E1D /* UIView+Toast.swift */; };
+		BFD3730E1E17842300F29E1D /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */; };
+		BFD3730F1E17842300F29E1D /* UIViewController+SocialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372EB1E17842300F29E1D /* UIViewController+SocialData.swift */; };
+		BFD373101E17842300F29E1D /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +58,42 @@
 		18614E8E1E02523600E0E967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18614E911E02523600E0E967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18614E931E02523600E0E967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18614E991E0254AD00E0E967 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		18614E9B1E02565700E0E967 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Sublayer.swift"; sourceTree = "<group>"; };
+		BFD372CA1E17842300F29E1D /* NSArray+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+String.swift"; sourceTree = "<group>"; };
+		BFD372CB1E17842300F29E1D /* NSData+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+String.swift"; sourceTree = "<group>"; };
+		BFD372CC1E17842300F29E1D /* NSDate+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Components.swift"; sourceTree = "<group>"; };
+		BFD372CD1E17842300F29E1D /* NSDictionary+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Json.swift"; sourceTree = "<group>"; };
+		BFD372CE1E17842300F29E1D /* NSNumber+ Converte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+ Converte.swift"; sourceTree = "<group>"; };
+		BFD372CF1E17842300F29E1D /* NSObject+Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Class.swift"; sourceTree = "<group>"; };
+		BFD372D01E17842300F29E1D /* String+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Json.swift"; sourceTree = "<group>"; };
+		BFD372D11E17842300F29E1D /* String+Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Security.swift"; sourceTree = "<group>"; };
+		BFD372D21E17842300F29E1D /* String+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Size.swift"; sourceTree = "<group>"; };
+		BFD372D31E17842300F29E1D /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
+		BFD372D41E17842300F29E1D /* String+Verification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Verification.swift"; sourceTree = "<group>"; };
+		BFD372D51E17842300F29E1D /* UIColor+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ST.swift"; sourceTree = "<group>"; };
+		BFD372D61E17842300F29E1D /* UIImage+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Cache.swift"; sourceTree = "<group>"; };
+		BFD372D71E17842300F29E1D /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		BFD372D81E17842300F29E1D /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		BFD372D91E17842300F29E1D /* UIImage+RoundCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RoundCorner.swift"; sourceTree = "<group>"; };
+		BFD372DA1E17842300F29E1D /* UIImageView+OSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+OSS.swift"; sourceTree = "<group>"; };
+		BFD372DB1E17842300F29E1D /* UILabel+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Size.swift"; sourceTree = "<group>"; };
+		BFD372DC1E17842300F29E1D /* UILabel+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Style.swift"; sourceTree = "<group>"; };
+		BFD372DD1E17842300F29E1D /* UILabel+Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Text.swift"; sourceTree = "<group>"; };
+		BFD372DE1E17842300F29E1D /* UINavigationController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Navigation.swift"; sourceTree = "<group>"; };
+		BFD372DF1E17842300F29E1D /* UISearchBar+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Style.swift"; sourceTree = "<group>"; };
+		BFD372E01E17842300F29E1D /* UITabBarController+TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+TabBar.swift"; sourceTree = "<group>"; };
+		BFD372E11E17842300F29E1D /* UITableViewCell+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Style.swift"; sourceTree = "<group>"; };
+		BFD372E21E17842300F29E1D /* UITextField+Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Text.swift"; sourceTree = "<group>"; };
+		BFD372E31E17842300F29E1D /* UITextView+Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Text.swift"; sourceTree = "<group>"; };
+		BFD372E41E17842300F29E1D /* UIView+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Appearance.swift"; sourceTree = "<group>"; };
+		BFD372E51E17842300F29E1D /* UIView+Constaint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constaint.swift"; sourceTree = "<group>"; };
+		BFD372E61E17842300F29E1D /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		BFD372E71E17842300F29E1D /* UIView+Subview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subview.swift"; sourceTree = "<group>"; };
+		BFD372E81E17842300F29E1D /* UIView+Tap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Tap.swift"; sourceTree = "<group>"; };
+		BFD372E91E17842300F29E1D /* UIView+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Toast.swift"; sourceTree = "<group>"; };
+		BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		BFD372EB1E17842300F29E1D /* UIViewController+SocialData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SocialData.swift"; sourceTree = "<group>"; };
+		BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +126,7 @@
 		18614E861E02523600E0E967 /* test-searchview-swift */ = {
 			isa = PBXGroup;
 			children = (
-				186444C71E027F4100D0984A /* SearchView */,
+				BFD372C81E17842300F29E1D /* Classes */,
 				18614E871E02523600E0E967 /* AppDelegate.swift */,
 				18614E891E02523600E0E967 /* ViewController.swift */,
 				18614E8B1E02523600E0E967 /* Main.storyboard */,
@@ -69,14 +137,48 @@
 			path = "test-searchview-swift";
 			sourceTree = "<group>";
 		};
-		186444C71E027F4100D0984A /* SearchView */ = {
+		BFD372C81E17842300F29E1D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				18614E991E0254AD00E0E967 /* SearchView.swift */,
-				18614E9B1E02565700E0E967 /* search.png */,
+				BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */,
+				BFD372CA1E17842300F29E1D /* NSArray+String.swift */,
+				BFD372CB1E17842300F29E1D /* NSData+String.swift */,
+				BFD372CC1E17842300F29E1D /* NSDate+Components.swift */,
+				BFD372CD1E17842300F29E1D /* NSDictionary+Json.swift */,
+				BFD372CE1E17842300F29E1D /* NSNumber+ Converte.swift */,
+				BFD372CF1E17842300F29E1D /* NSObject+Class.swift */,
+				BFD372D01E17842300F29E1D /* String+Json.swift */,
+				BFD372D11E17842300F29E1D /* String+Security.swift */,
+				BFD372D21E17842300F29E1D /* String+Size.swift */,
+				BFD372D31E17842300F29E1D /* String+Substring.swift */,
+				BFD372D41E17842300F29E1D /* String+Verification.swift */,
+				BFD372D51E17842300F29E1D /* UIColor+ST.swift */,
+				BFD372D61E17842300F29E1D /* UIImage+Cache.swift */,
+				BFD372D71E17842300F29E1D /* UIImage+Color.swift */,
+				BFD372D81E17842300F29E1D /* UIImage+Resize.swift */,
+				BFD372D91E17842300F29E1D /* UIImage+RoundCorner.swift */,
+				BFD372DA1E17842300F29E1D /* UIImageView+OSS.swift */,
+				BFD372DB1E17842300F29E1D /* UILabel+Size.swift */,
+				BFD372DC1E17842300F29E1D /* UILabel+Style.swift */,
+				BFD372DD1E17842300F29E1D /* UILabel+Text.swift */,
+				BFD372DE1E17842300F29E1D /* UINavigationController+Navigation.swift */,
+				BFD372DF1E17842300F29E1D /* UISearchBar+Style.swift */,
+				BFD372E01E17842300F29E1D /* UITabBarController+TabBar.swift */,
+				BFD372E11E17842300F29E1D /* UITableViewCell+Style.swift */,
+				BFD372E21E17842300F29E1D /* UITextField+Text.swift */,
+				BFD372E31E17842300F29E1D /* UITextView+Text.swift */,
+				BFD372E41E17842300F29E1D /* UIView+Appearance.swift */,
+				BFD372E51E17842300F29E1D /* UIView+Constaint.swift */,
+				BFD372E61E17842300F29E1D /* UIView+Frame.swift */,
+				BFD372E71E17842300F29E1D /* UIView+Subview.swift */,
+				BFD372E81E17842300F29E1D /* UIView+Tap.swift */,
+				BFD372E91E17842300F29E1D /* UIView+Toast.swift */,
+				BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */,
+				BFD372EB1E17842300F29E1D /* UIViewController+SocialData.swift */,
+				BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */,
 			);
-			name = SearchView;
-			sourceTree = "<group>";
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -110,6 +212,7 @@
 				TargetAttributes = {
 					18614E831E02523600E0E967 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Y6KJ5Z4R4Z;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,7 +243,6 @@
 				18614E921E02523600E0E967 /* LaunchScreen.storyboard in Resources */,
 				18614E8F1E02523600E0E967 /* Assets.xcassets in Resources */,
 				18614E8D1E02523600E0E967 /* Main.storyboard in Resources */,
-				18614E9C1E02565700E0E967 /* search.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +253,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD372F91E17842300F29E1D /* UIColor+ST.swift in Sources */,
+				BFD3730D1E17842300F29E1D /* UIView+Toast.swift in Sources */,
+				BFD372F51E17842300F29E1D /* String+Security.swift in Sources */,
+				BFD372F61E17842300F29E1D /* String+Size.swift in Sources */,
+				BFD372EF1E17842300F29E1D /* NSData+String.swift in Sources */,
+				BFD373061E17842300F29E1D /* UITextField+Text.swift in Sources */,
 				18614E8A1E02523600E0E967 /* ViewController.swift in Sources */,
-				18614E9A1E0254AD00E0E967 /* SearchView.swift in Sources */,
+				BFD3730C1E17842300F29E1D /* UIView+Tap.swift in Sources */,
+				BFD373011E17842300F29E1D /* UILabel+Text.swift in Sources */,
+				BFD372FC1E17842300F29E1D /* UIImage+Resize.swift in Sources */,
+				BFD373101E17842300F29E1D /* UIViewController+Toast.swift in Sources */,
+				BFD373021E17842300F29E1D /* UINavigationController+Navigation.swift in Sources */,
+				BFD372F31E17842300F29E1D /* NSObject+Class.swift in Sources */,
+				BFD3730E1E17842300F29E1D /* UIViewController+Navigation.swift in Sources */,
+				BFD373031E17842300F29E1D /* UISearchBar+Style.swift in Sources */,
+				BFD372F81E17842300F29E1D /* String+Verification.swift in Sources */,
+				BFD3730F1E17842300F29E1D /* UIViewController+SocialData.swift in Sources */,
+				BFD372F01E17842300F29E1D /* NSDate+Components.swift in Sources */,
+				BFD372F11E17842300F29E1D /* NSDictionary+Json.swift in Sources */,
+				BFD372EE1E17842300F29E1D /* NSArray+String.swift in Sources */,
+				BFD372FF1E17842300F29E1D /* UILabel+Size.swift in Sources */,
+				BFD372F41E17842300F29E1D /* String+Json.swift in Sources */,
+				BFD372FE1E17842300F29E1D /* UIImageView+OSS.swift in Sources */,
+				BFD372F71E17842300F29E1D /* String+Substring.swift in Sources */,
+				BFD3730B1E17842300F29E1D /* UIView+Subview.swift in Sources */,
+				BFD372FD1E17842300F29E1D /* UIImage+RoundCorner.swift in Sources */,
+				BFD373041E17842300F29E1D /* UITabBarController+TabBar.swift in Sources */,
+				BFD372ED1E17842300F29E1D /* CALayer+Sublayer.swift in Sources */,
+				BFD372F21E17842300F29E1D /* NSNumber+ Converte.swift in Sources */,
+				BFD372FA1E17842300F29E1D /* UIImage+Cache.swift in Sources */,
 				18614E881E02523600E0E967 /* AppDelegate.swift in Sources */,
+				BFD373001E17842300F29E1D /* UILabel+Style.swift in Sources */,
+				BFD373071E17842300F29E1D /* UITextView+Text.swift in Sources */,
+				BFD373051E17842300F29E1D /* UITableViewCell+Style.swift in Sources */,
+				BFD3730A1E17842300F29E1D /* UIView+Frame.swift in Sources */,
+				BFD373081E17842300F29E1D /* UIView+Appearance.swift in Sources */,
+				BFD373091E17842300F29E1D /* UIView+Constaint.swift in Sources */,
+				BFD372FB1E17842300F29E1D /* UIImage+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +411,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y6KJ5Z4R4Z;
 				INFOPLIST_FILE = "test-searchview-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FSTM.test-searchview-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,7 +425,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y6KJ5Z4R4Z;
 				INFOPLIST_FILE = "test-searchview-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FSTM.test-searchview-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -6,6 +6,9 @@
 //  Copyright © 2016年 hqs. All rights reserved.
 //
 
+
+import UIKit
+
 extension UILabel {
     
     public func setFontColor(_ fontColor: UIColor, range: NSRange){

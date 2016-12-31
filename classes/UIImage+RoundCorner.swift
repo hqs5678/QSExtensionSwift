@@ -6,6 +6,8 @@
 //  Copyright © 2016年 火星人. All rights reserved.
 //
 
+import UIKit
+
 extension UIImage {
     
     func roundedCornerImage(radius: CGFloat, _ sizetoFit: CGSize) -> UIImage {

@@ -6,6 +6,8 @@
 //  Copyright © 2016年 huangqingsong. All rights reserved.
 //
 
+import UIKit
+
 extension String {
     
     func toJsonObj() -> AnyObject? {

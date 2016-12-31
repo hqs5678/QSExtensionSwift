@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 huangqingsong. All rights reserved.
 //
 
-
+import UIKit
 
 extension String{
     

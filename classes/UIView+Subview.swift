@@ -6,6 +6,8 @@
 //  Copyright © 2016年 hqs. All rights reserved.
 //
 
+import UIKit
+
 extension UIView {
     
     func removeAllSubviews(){
