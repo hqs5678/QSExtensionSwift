@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QSExtensionSwift"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "extensions for swift"
 
   # This description is used to generate tags and improve search results.
@@ -25,8 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-QSExtensionSwift
-Extension
+
+                    QSExtensionSwift
+                    Extension
+
                    DESC
 
   s.homepage     = "https://github.com/hqs5678/QSExtensionSwift"
@@ -92,10 +94,10 @@ Extension
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
+  s.source_files  = "Classes", "Classes/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+# s.public_header_files = ""
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

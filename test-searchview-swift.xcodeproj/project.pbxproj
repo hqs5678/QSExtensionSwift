@@ -92,7 +92,6 @@
 		BFD372E91E17842300F29E1D /* UIView+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Toast.swift"; sourceTree = "<group>"; };
 		BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
-		BFD3732F1E17992B00F29E1D /* bridging_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bridging_header.h; path = "../../fstm-user-swift/FSUser/bridging_header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +126,6 @@
 			children = (
 				BFD372C81E17842300F29E1D /* Classes */,
 				18614E871E02523600E0E967 /* AppDelegate.swift */,
-				BFD3732F1E17992B00F29E1D /* bridging_header.h */,
 				18614E891E02523600E0E967 /* ViewController.swift */,
 				18614E8B1E02523600E0E967 /* Main.storyboard */,
 				18614E8E1E02523600E0E967 /* Assets.xcassets */,
@@ -415,7 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FSTM.test-searchview-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/bridging_header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/QSExtensionSwift.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,7 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FSTM.test-searchview-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/bridging_header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/QSExtensionSwift.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
