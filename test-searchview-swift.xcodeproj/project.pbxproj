@@ -92,6 +92,7 @@
 		BFD372E91E17842300F29E1D /* UIView+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Toast.swift"; sourceTree = "<group>"; };
 		BFD372EA1E17842300F29E1D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		BFD372EC1E17842300F29E1D /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
+		BFD373321E1B370C00F29E1D /* QSExtensionSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSExtensionSwift.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +152,7 @@
 				BFD372D31E17842300F29E1D /* String+Substring.swift */,
 				BFD372D41E17842300F29E1D /* String+Verification.swift */,
 				BFD372D51E17842300F29E1D /* UIColor+ST.swift */,
+				BFD373321E1B370C00F29E1D /* QSExtensionSwift.h */,
 				BFD372D61E17842300F29E1D /* UIImage+Cache.swift */,
 				BFD372D71E17842300F29E1D /* UIImage+Color.swift */,
 				BFD372D81E17842300F29E1D /* UIImage+Resize.swift */,

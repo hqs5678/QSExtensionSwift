@@ -97,8 +97,8 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Classes/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
 
-# s.public_header_files = "Classes/*.h"
-
+  s.public_header_files = "<CommonCrypto/CommonDigest.h>"
+    
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
