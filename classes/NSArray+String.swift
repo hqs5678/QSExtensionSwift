@@ -10,7 +10,7 @@ import UIKit
 
 extension NSArray {
     
-    public func toFString() -> String{
+    public func toString(separator: String) -> String{
         
         if self.count  == 0 {
             return ""
@@ -18,9 +18,9 @@ extension NSArray {
         let str = NSMutableString()
         for obj in self {
             str.append(obj as! String)
-            str.append(",,,")
+            str.append(separator)
         }
-        return str.substring(to: str.length - 3)
+        return str.substring(to: str.length - separator.length())
     }
 
 }

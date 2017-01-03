@@ -17,7 +17,7 @@ extension UITextView {
         return false
     }
     
-    public func textEqualTo(_ textView: UITextView) -> Bool {
+    public func equalTo(_ textView: UITextView) -> Bool {
         if self.isEmpty() {
             return false
         }
