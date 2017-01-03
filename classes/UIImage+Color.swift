@@ -1,6 +1,6 @@
 //
 //  UIImage+Color.swift
-//  testswift
+//  QSExtensionSwift
 //
 //  Created by hqs on 16/3/29.
 //  Copyright © 2016年 hqs. All rights reserved.
@@ -46,15 +46,19 @@ extension UIImage {
     public class func imageWithLinearGradient(size: CGSize, color1: UIColor, color2: UIColor, startPoint: CGPoint, endPoint: CGPoint) -> UIImage {
         
         let locations:[CGFloat] = [0.0, 1.0]
-        return imageWithLinearGradient(size: size, cgColors: [color1.cgColor, color2.cgColor], locations: locations, startPoint: startPoint, endPoint: endPoint)
+        return imageWithLinearGradient(size: size, colors: [color1, color2], locations: locations, startPoint: startPoint, endPoint: endPoint)
     }
     
-    class func imageWithLinearGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], startPoint: CGPoint, endPoint: CGPoint) -> UIImage {
+    public class func imageWithLinearGradient(size: CGSize, colors: [UIColor], locations:[CGFloat], startPoint: CGPoint, endPoint: CGPoint) -> UIImage {
         
         UIGraphicsBeginImageContext(size)
         
         let context = UIGraphicsGetCurrentContext()
         let colorSpace = CGColorSpaceCreateDeviceRGB()
+        var cgColors = [CGColor]()
+        for color in colors {
+            cgColors.append(color.cgColor)
+        }
         let gradient = CGGradient(colorsSpace: colorSpace, colors: cgColors as CFArray, locations: locations)
         
         context?.drawLinearGradient(gradient!, start: startPoint, end: endPoint, options: [.drawsAfterEndLocation, .drawsBeforeStartLocation])
@@ -64,7 +68,6 @@ extension UIImage {
         
         return theImage!
     }
-    
     
     
     public class func imageWithRadialGradient(size: CGSize, color1: UIColor, color2: UIColor) -> UIImage {
@@ -79,23 +82,30 @@ extension UIImage {
         let startCenter = center
         let startRadius: CGFloat = 0
         let endCenter = startCenter
-        return imageWithRadialGradient(size: size, cgColors: [color1.cgColor, color2.cgColor], locations: [0.0, 1.0], startCenter: startCenter, startRadius: startRadius, endCenter: endCenter, endRadius: radius)
+        var cgColors = [CGColor]()
+        cgColors.append(color1.cgColor)
+        cgColors.append(color2.cgColor)
+        return imageWithRadialGradient(size: size, colors: [color1, color2], locations: [0.0, 1.0], startCenter: startCenter, startRadius: startRadius, endCenter: endCenter, endRadius: radius)
     }
     
-    class func imageWithRadialGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], radius: CGFloat) -> UIImage {
+    public class func imageWithRadialGradient(size: CGSize, colors: [UIColor], locations:[CGFloat], radius: CGFloat) -> UIImage {
         
         let startCenter = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
         let startRadius: CGFloat = 0
         let endCenter = startCenter
-        return imageWithRadialGradient(size: size, cgColors: cgColors, locations: locations, startCenter: startCenter, startRadius: startRadius, endCenter: endCenter, endRadius: radius)
+        return imageWithRadialGradient(size: size, colors: colors, locations: locations, startCenter: startCenter, startRadius: startRadius, endCenter: endCenter, endRadius: radius)
     }
     
-    class func imageWithRadialGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat) -> UIImage {
+    public class func imageWithRadialGradient(size: CGSize, colors: [UIColor], locations:[CGFloat], startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat) -> UIImage {
         
         UIGraphicsBeginImageContext(size)
         
         let context = UIGraphicsGetCurrentContext()
         let colorSpace = CGColorSpaceCreateDeviceRGB()
+        var cgColors = [CGColor]()
+        for color in colors {
+            cgColors.append(color.cgColor)
+        }
         let gradient = CGGradient(colorsSpace: colorSpace, colors: cgColors as CFArray, locations: locations)
         
         context?.saveGState()

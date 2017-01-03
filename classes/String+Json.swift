@@ -1,6 +1,6 @@
 //
 //  String+Json.swift
-//  formoney
+//  QSExtensionSwift
 //
 //  Created by 火星人 on 16/4/21.
 //  Copyright © 2016年 huangqingsong. All rights reserved.
