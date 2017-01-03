@@ -7,4 +7,6 @@ target 'test-searchview-swift' do
 
   # Pods for test-searchview-swift
 
+ pod 'SwiftHashing', '~> 0.1'
+
 end
