@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "18614E831E02523600E0E967"
-               BuildableName = "test-searchview-swift.app"
-               BlueprintName = "test-searchview-swift"
-               ReferencedContainer = "container:test-searchview-swift.xcodeproj">
+               BuildableName = "QSExtensionSwift.app"
+               BlueprintName = "QSExtensionSwift"
+               ReferencedContainer = "container:QSExtensionSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18614E831E02523600E0E967"
-            BuildableName = "test-searchview-swift.app"
-            BlueprintName = "test-searchview-swift"
-            ReferencedContainer = "container:test-searchview-swift.xcodeproj">
+            BuildableName = "QSExtensionSwift.app"
+            BlueprintName = "QSExtensionSwift"
+            ReferencedContainer = "container:QSExtensionSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18614E831E02523600E0E967"
-            BuildableName = "test-searchview-swift.app"
-            BlueprintName = "test-searchview-swift"
-            ReferencedContainer = "container:test-searchview-swift.xcodeproj">
+            BuildableName = "QSExtensionSwift.app"
+            BlueprintName = "QSExtensionSwift"
+            ReferencedContainer = "container:QSExtensionSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18614E831E02523600E0E967"
-            BuildableName = "test-searchview-swift.app"
-            BlueprintName = "test-searchview-swift"
-            ReferencedContainer = "container:test-searchview-swift.xcodeproj">
+            BuildableName = "QSExtensionSwift.app"
+            BlueprintName = "QSExtensionSwift"
+            ReferencedContainer = "container:QSExtensionSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -50,7 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18614E841E02523600E0E967 /* test-searchview-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-searchview-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18614E841E02523600E0E967 /* QSExtensionSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QSExtensionSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18614E871E02523600E0E967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18614E891E02523600E0E967 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18614E8C1E02523600E0E967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		18614E7B1E02523600E0E967 = {
 			isa = PBXGroup;
 			children = (
-				18614E861E02523600E0E967 /* test-searchview-swift */,
+				18614E861E02523600E0E967 /* QSExtensionSwift */,
 				18614E851E02523600E0E967 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,12 +116,12 @@
 		18614E851E02523600E0E967 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18614E841E02523600E0E967 /* test-searchview-swift.app */,
+				18614E841E02523600E0E967 /* QSExtensionSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18614E861E02523600E0E967 /* test-searchview-swift */ = {
+		18614E861E02523600E0E967 /* QSExtensionSwift */ = {
 			isa = PBXGroup;
 			children = (
 				BFD372C81E17842300F29E1D /* Classes */,
@@ -132,6 +132,7 @@
 				18614E901E02523600E0E967 /* LaunchScreen.storyboard */,
 				18614E931E02523600E0E967 /* Info.plist */,
 			);
+			name = QSExtensionSwift;
 			path = "test-searchview-swift";
 			sourceTree = "<group>";
 		};
@@ -180,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18614E831E02523600E0E967 /* test-searchview-swift */ = {
+		18614E831E02523600E0E967 /* QSExtensionSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18614E961E02523600E0E967 /* Build configuration list for PBXNativeTarget "test-searchview-swift" */;
+			buildConfigurationList = 18614E961E02523600E0E967 /* Build configuration list for PBXNativeTarget "QSExtensionSwift" */;
 			buildPhases = (
 				18614E801E02523600E0E967 /* Sources */,
 				18614E811E02523600E0E967 /* Frameworks */,
@@ -192,9 +193,9 @@
 			);
 			dependencies = (
 			);
-			name = "test-searchview-swift";
+			name = QSExtensionSwift;
 			productName = "test-searchview-swift";
-			productReference = 18614E841E02523600E0E967 /* test-searchview-swift.app */;
+			productReference = 18614E841E02523600E0E967 /* QSExtensionSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 18614E7F1E02523600E0E967 /* Build configuration list for PBXProject "test-searchview-swift" */;
+			buildConfigurationList = 18614E7F1E02523600E0E967 /* Build configuration list for PBXProject "QSExtensionSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -227,7 +228,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18614E831E02523600E0E967 /* test-searchview-swift */,
+				18614E831E02523600E0E967 /* QSExtensionSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -436,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18614E7F1E02523600E0E967 /* Build configuration list for PBXProject "test-searchview-swift" */ = {
+		18614E7F1E02523600E0E967 /* Build configuration list for PBXProject "QSExtensionSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18614E941E02523600E0E967 /* Debug */,
@@ -445,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18614E961E02523600E0E967 /* Build configuration list for PBXNativeTarget "test-searchview-swift" */ = {
+		18614E961E02523600E0E967 /* Build configuration list for PBXNativeTarget "QSExtensionSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18614E971E02523600E0E967 /* Debug */,

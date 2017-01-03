@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "36083EDE5F0C1C91114EBA5F1F758A515BC601B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "36083EDE5F0C1C91114EBA5F1F758A515BC601B1" : 9223372036854775807,
+    "C61E2F557A6A50F3FC0F9BEA3B3FD89496812080" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BC97179A-96DB-46B3-AFC3-C86D2109AADD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "36083EDE5F0C1C91114EBA5F1F758A515BC601B1" : "QSExtensionSwift\/",
+    "C61E2F557A6A50F3FC0F9BEA3B3FD89496812080" : "fstm-user-swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QSExtensionSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "QSExtensionSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hqs5678\/QSExtensionSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "36083EDE5F0C1C91114EBA5F1F758A515BC601B1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/hqs5678\/fstm-user-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C61E2F557A6A50F3FC0F9BEA3B3FD89496812080"
+    }
+  ]
+}
