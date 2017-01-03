@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  formoney
+//  QSExtensionSwift
 //
 //  Created by 火星人 on 15/9/14.
 //  Copyright (c) 2015年 huangqingsong. All rights reserved.

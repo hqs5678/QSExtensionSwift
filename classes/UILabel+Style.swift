@@ -1,6 +1,6 @@
 //
 //  UILabel+Text.swift
-//  formoney
+//  QSExtensionSwift
 //
 //  Created by 火星人 on 16/5/15.
 //  Copyright © 2016年 hqs. All rights reserved.
