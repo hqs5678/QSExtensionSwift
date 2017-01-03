@@ -17,7 +17,7 @@ extension UILabel {
         return false
     }
     
-    public func textEqualTo(_ label: UILabel) -> Bool {
+    public func equalTo(_ label: UILabel) -> Bool {
         if self.isEmpty() {
             return false
         }

@@ -34,7 +34,7 @@ extension UIView {
  
  public class TmpHandleClass {
     
-    var tapHandle = {
+    public var tapHandle = {
         (tap: UITapGestureRecognizer) -> Void in return
     }
  }

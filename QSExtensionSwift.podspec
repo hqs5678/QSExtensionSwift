@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QSExtensionSwift"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "extensions for swift"
 
   # This description is used to generate tags and improve search results.
@@ -121,7 +121,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "UIKit", "Foundation", "CoreGraphics"
+  s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
