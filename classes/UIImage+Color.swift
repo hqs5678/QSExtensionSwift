@@ -9,6 +9,7 @@
 
 
 import UIKit
+import Foundation
 
 extension UIImage {
     
