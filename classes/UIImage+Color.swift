@@ -9,6 +9,7 @@
 
 
 import UIKit
+import Foundation
 
 extension UIImage {
     
@@ -48,7 +49,7 @@ extension UIImage {
         return imageWithLinearGradient(size: size, cgColors: [color1.cgColor, color2.cgColor], locations: locations, startPoint: startPoint, endPoint: endPoint)
     }
     
-    public class func imageWithLinearGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], startPoint: CGPoint, endPoint: CGPoint) -> UIImage {
+    class func imageWithLinearGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], startPoint: CGPoint, endPoint: CGPoint) -> UIImage {
         
         UIGraphicsBeginImageContext(size)
         
@@ -81,7 +82,7 @@ extension UIImage {
         return imageWithRadialGradient(size: size, cgColors: [color1.cgColor, color2.cgColor], locations: [0.0, 1.0], startCenter: startCenter, startRadius: startRadius, endCenter: endCenter, endRadius: radius)
     }
     
-    public class func imageWithRadialGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], radius: CGFloat) -> UIImage {
+    class func imageWithRadialGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], radius: CGFloat) -> UIImage {
         
         let startCenter = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
         let startRadius: CGFloat = 0
@@ -89,7 +90,7 @@ extension UIImage {
         return imageWithRadialGradient(size: size, cgColors: cgColors, locations: locations, startCenter: startCenter, startRadius: startRadius, endCenter: endCenter, endRadius: radius)
     }
     
-    public class func imageWithRadialGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat) -> UIImage {
+    class func imageWithRadialGradient(size: CGSize, cgColors: [CGColor], locations:[CGFloat], startCenter: CGPoint, startRadius: CGFloat, endCenter: CGPoint, endRadius: CGFloat) -> UIImage {
         
         UIGraphicsBeginImageContext(size)
         
