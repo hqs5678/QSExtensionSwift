@@ -1,0 +1,12 @@
+PODS:
+  - SwiftHashing (0.1)
+
+DEPENDENCIES:
+  - SwiftHashing (~> 0.1)
+
+SPEC CHECKSUMS:
+  SwiftHashing: 7998ceac4eda63801a456e7a7d3bfbfac20e9dbc
+
+PODFILE CHECKSUM: a923a489c98360a2f8522652df72564550cfcf6e
+
+COCOAPODS: 1.1.1
