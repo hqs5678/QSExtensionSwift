@@ -35,6 +35,7 @@ extension UITextField {
         self.attributedPlaceholder = NSMutableAttributedString(string: self.placeholder!, attributes: [NSForegroundColorAttributeName : color])
     }
     
+    // MARK: 过滤作用, 用在代理方法中, 设置输入内容为Float
     public func textWillChangedWithFloatNumber(replaceString: String) -> Bool {
         
         let number = "1234567890."
@@ -86,6 +87,7 @@ extension UITextField {
         return true
     }
     
+    // MARK: 过滤作用, 用在代理方法中, 设置输入内容为Integer
     public func textWillChangedWithIntegerNumber(replaceString: String) -> Bool {
         
         let number = "1234567890"
