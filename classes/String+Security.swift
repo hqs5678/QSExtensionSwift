@@ -7,8 +7,29 @@
 //
 
 import UIKit
+import Foundation
 
 extension String {
+    
+//    func md5(string: String) -> String {
+//        
+//        let t = NSTask()
+//        t.launchPath = "/sbin/md5"
+//        t.arguments = ["-q", "-s", string]
+//        t.standardOutput = Pipe()
+//        
+//        t.launch()
+//        
+//        let outData = t.standardOutput.fileHandleForReading.readDataToEndOfFile()
+//        var outBytes = [UInt8](count:outData.length, repeatedValue:0)
+//        outData.getBytes(&outBytes, length: outData.length)
+//        
+//        var outString = String(bytes: outBytes, encoding: NSASCIIStringEncoding)
+//        
+//        assert(outString != nil, "failed to md5 input string")
+//        
+//        return outString!.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+//    }
     
     public var md5: String! {
         let str = self.cString(using: String.Encoding.utf8)
