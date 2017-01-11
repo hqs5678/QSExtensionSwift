@@ -10,8 +10,14 @@ import UIKit
 
 extension UILabel {
     
+    public var textLength: Int {
+        if let text = self.text {
+            return text.length
+        }
+        return 0
+    }
     public func isEmpty() -> Bool {
-        if  self.text == nil || self.text?.length() == 0 {
+        if  self.text == nil || self.text?.length == 0 {
             return true
         }
         return false
@@ -31,13 +37,5 @@ extension UILabel {
         }
     }
     
-    public func textLength() -> Int {
-        if self.text != nil {
-            return self.text!.length()
-        }
-        else {
-            return 0
-        }
-    } 
 }
 

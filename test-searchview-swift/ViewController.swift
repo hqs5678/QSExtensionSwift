@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        self.view.layer.removeAllAnimations()
+        let str = "1234567890"
+        print(str.length)
     }
 
     

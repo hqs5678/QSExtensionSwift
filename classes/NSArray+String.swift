@@ -20,7 +20,7 @@ extension NSArray {
             str.append(obj as! String)
             str.append(separator)
         }
-        return str.substring(to: str.length - separator.length())
+        return str.substring(to: str.length - separator.length)
     }
 
 }
