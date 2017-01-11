@@ -11,14 +11,33 @@ import UIKit
 extension String {
     
     public func substringToIndex(_ index: Int) -> String{
-        return (self as NSString).substring(to: index) as String
+        
+        if index < 0 || index > self.length - 1{
+            return "fatal index"
+        }
+        let endIndex = self.index(self.startIndex, offsetBy: index) as Index
+        let range = Range(uncheckedBounds: (self.startIndex, endIndex))
+        return self.substring(with: range)
     }
     
     public func substringFromIndex(_ index: Int) -> String{
-        return (self as NSString).substring(from: index) as String
+        
+        if index < 0 || index > self.length - 1{
+            return "fatal index"
+        }
+        let startIndex = self.index(self.startIndex, offsetBy: index)
+        let range = Range(uncheckedBounds: (startIndex, self.endIndex))
+        return self.substring(with: range)
     }
     
-    public func substringWithRange(_ range: NSRange) -> String {
-        return (self as NSString).substring(with: range) as String
+    public func substringFromIndex(_ from: Int, toIndex to: Int) -> String {
+        
+        if from < 0 || from > self.length - 1 || to > self.length || to < 0 || from > to {
+            return "fatal index"
+        }
+        let startIndex = self.index(self.startIndex, offsetBy: from)
+        let endIndex = self.index(self.startIndex, offsetBy: to)
+        let range = Range(uncheckedBounds: (startIndex, endIndex))
+        return self.substring(with: range)
     }
 }
