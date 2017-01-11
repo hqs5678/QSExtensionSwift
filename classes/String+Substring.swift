@@ -16,8 +16,7 @@ extension String {
             return "fatal index"
         }
         let endIndex = self.index(self.startIndex, offsetBy: index) as Index
-        let range = Range(uncheckedBounds: (self.startIndex, endIndex))
-        return self.substring(with: range)
+        return self.substring(to: endIndex)
     }
     
     public func substringFromIndex(_ index: Int) -> String{
@@ -26,9 +25,15 @@ extension String {
             return "fatal index"
         }
         let startIndex = self.index(self.startIndex, offsetBy: index)
-        let range = Range(uncheckedBounds: (startIndex, self.endIndex))
-        return self.substring(with: range)
+        return self.substring(from: startIndex)
     }
+    
+    public func substringFromIndex(_ from: Int, length len: Int) -> String {
+        
+        let to = from + len
+        return self.substringFromIndex(from, toIndex: to)
+    }
+
     
     public func substringFromIndex(_ from: Int, toIndex to: Int) -> String {
         
