@@ -10,24 +10,20 @@ import UIKit
 
 extension UITextView {
     
-    public func isEmpty() -> Bool {
-        if  self.text == nil || self.text?.length() == 0 {
-            return true
+    public var textLength: Int {
+        if let text = self.text {
+            return text.length
         }
-        return false
+        return 0
     }
     
     public func equalTo(_ textView: UITextView) -> Bool {
-        if self.isEmpty() {
-            return false
+        
+        if self.text == textView.text {
+            return true
         }
         else {
-            if self.text == textView.text {
-                return true
-            }
-            else {
-                return false
-            }
+            return false
         }
     }
 }

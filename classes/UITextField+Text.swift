@@ -10,24 +10,20 @@ import UIKit
 
 extension UITextField {
     
-    public func isEmpty() -> Bool {
-        if  self.text == nil || self.text?.length() == 0 {
-            return true
+    public var textLength: Int {
+        if let text = self.text {
+            return text.length
         }
-        return false
+        return 0
     }
     
     public func equalTo(_ textField: UITextField) -> Bool {
-        if self.isEmpty() {
-            return false
+        
+        if self.text == textField.text {
+            return true
         }
         else {
-            if self.text == textField.text {
-                return true
-            }
-            else {
-                return false
-            }
+            return false
         }
     }
     
@@ -48,7 +44,7 @@ extension UITextField {
                 }
             }
             
-            if text.length() == 1 {
+            if text.length == 1 {
                 if text == "0" {
                     if replaceString.characters.first == "0" {
                         return false
@@ -60,7 +56,7 @@ extension UITextField {
                 }
             }
             
-            if text.length() == 0 {
+            if text.length == 0 {
                 if replaceString.characters.first == "." {
                     return false
                 }
@@ -93,7 +89,7 @@ extension UITextField {
         let number = "1234567890"
         
         if let text = self.text {
-            if replaceString.characters.first == "0" && text.length() == 0 {
+            if replaceString.characters.first == "0" && text.length == 0 {
                 return false
             }
         }
@@ -108,7 +104,7 @@ extension UITextField {
                 return false
             }
         }
-         
+        
         return true
     }
 }

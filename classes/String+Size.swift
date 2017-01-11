@@ -8,7 +8,11 @@
 
 import UIKit
 
-extension String{
+extension String {
+    
+    public var length: Int {
+        return self.characters.count
+    }
     
     public func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
         let newStr:NSString = NSString(string: self)
@@ -20,18 +24,14 @@ extension String{
         return self.trimmingCharacters(in: CharacterSet(charactersIn: " "))
     }
     
-    public func length() -> Int {
-        return (self as NSString).length
+    public func toDataValue() -> Data? {
+        return self.data(using: .utf8)
     }
     
-    public func data2String(_ data:Data) -> String{
-        let str = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
-        return str as! String
-    }
     
-    public func toFArray() -> NSArray!{
-        if self.length() > 3 {
-            let array = self.components(separatedBy: ",,,")
+    public func toArrayBy(separator: String) -> NSArray!{
+        if self.length > 1 {
+            let array = self.components(separatedBy: separator)
             return array as NSArray!
         }
         else {
