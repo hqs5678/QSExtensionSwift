@@ -10,7 +10,7 @@ import UIKit
 
 extension String {
     
-    public func toJsonObj() -> AnyObject? {
+    public func toJsonObject() -> AnyObject? {
         
         let data = self.data(using: String.Encoding.utf8)
         return try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as AnyObject?
