@@ -10,8 +10,62 @@ import UIKit
 
 extension Int {
   
-    public var floatValue: CGFloat {
+    public var cgFloatValue: CGFloat {
         return CGFloat(self)
+    }
+    
+    public var floatValue: Float {
+        return Float(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
+    }
+    
+    public var stringValue: String {
+        return "\(self)"
+    }
+    
+    public var uIntValue: UInt {
+        return UInt(self)
+    }
+}
+
+extension Int32 {
+    
+    public var cgFloatValue: CGFloat {
+        return CGFloat(self)
+    }
+    
+    public var floatValue: Float {
+        return Float(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
+    }
+    
+    public var stringValue: String {
+        return "\(self)"
+    }
+    
+    public var uIntValue: UInt {
+        return UInt(self)
+    }
+}
+
+extension Int64 {
+    
+    public var cgFloatValue: CGFloat {
+        return CGFloat(self)
+    }
+    
+    public var floatValue: Float {
+        return Float(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
     }
     
     public var stringValue: String {
@@ -25,8 +79,16 @@ extension Int {
 
 extension UInt {
     
-    public var floatValue: CGFloat {
+    public var cgFloatValue: CGFloat {
         return CGFloat(self)
+    }
+    
+    public var floatValue: Float {
+        return Float(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
     }
     
     public var stringValue: String {
@@ -40,8 +102,16 @@ extension UInt {
 
 extension UInt32 {
     
-    public var floatValue: CGFloat {
+    public var cgFloatValue: CGFloat {
         return CGFloat(self)
+    }
+    
+    public var floatValue: Float {
+        return Float(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
     }
     
     public var stringValue: String {
@@ -53,6 +123,47 @@ extension UInt32 {
     }
 }
 
+extension UInt64 {
+    
+    public var cgFloatValue: CGFloat {
+        return CGFloat(self)
+    }
+    
+    public var floatValue: Float {
+        return Float(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
+    }
+    
+    public var stringValue: String {
+        return "\(self)"
+    }
+    
+    public var intValue: Int {
+        return Int(self)
+    }
+}
+
+extension Float {
+    
+    public var intValue: Int {
+        return Int(self)
+    }
+    
+    public var stringValue: String {
+        return "\(self)"
+    }
+    
+    public var cgFloatValue: CGFloat {
+        return CGFloat(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
+    }
+}
 
 extension CGFloat {
     
@@ -63,6 +174,14 @@ extension CGFloat {
     public var stringValue: String {
         return "\(self)"
     }
+    
+    public var floatValue: Float {
+        return Float(self)
+    }
+    
+    public var doubleValue: Double {
+        return Double(self)
+    }
 }
 
 extension String {
@@ -71,7 +190,4 @@ extension String {
         return Int(self)!
     }
     
-    public var floatValue: CGFloat {
-        return CGFloat(self.intValue)
-    }
 }

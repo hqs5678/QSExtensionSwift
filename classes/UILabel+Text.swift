@@ -16,24 +16,14 @@ extension UILabel {
         }
         return 0
     }
-    public func isEmpty() -> Bool {
-        if  self.text == nil || self.text?.length == 0 {
+        
+    public func equalTo(_ label: UILabel) -> Bool {
+        
+        if self.text == label.text {
             return true
         }
-        return false
-    }
-    
-    public func equalTo(_ label: UILabel) -> Bool {
-        if self.isEmpty() {
-            return false
-        }
         else {
-            if self.text == label.text {
-                return true
-            }
-            else {
-                return false
-            }
+            return false
         }
     }
     
