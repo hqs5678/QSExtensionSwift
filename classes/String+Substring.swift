@@ -40,4 +40,10 @@ extension String {
         let range = Range(uncheckedBounds: (startIndex, endIndex))
         return self.substring(with: range)
     }
+    
+    public func indexOf(string: String) -> Int {
+        let range = (self as NSString).range(of: string)
+        return range.location
+    }
+    
 }

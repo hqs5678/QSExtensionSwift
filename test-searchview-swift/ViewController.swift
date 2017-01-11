@@ -23,8 +23,13 @@ class ViewController: UIViewController {
         print(str.substringFromIndex(33))
         print(str.substringFromIndex(-2, toIndex: 2))
         
-        let textView = UITextView()
-        print(textView.textLength)
+        print(str.indexOf(string: "34"))
+        
+        let s = "1..2.3.4.5"
+        print(s.toArrayBy(separator: ".."))
+        
+        
+        
     }
 
     
