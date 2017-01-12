@@ -16,7 +16,7 @@
 		BFD372ED1E17842300F29E1D /* CALayer+Sublayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */; };
 		BFD372EE1E17842300F29E1D /* NSArray+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CA1E17842300F29E1D /* NSArray+String.swift */; };
 		BFD372EF1E17842300F29E1D /* NSData+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CB1E17842300F29E1D /* NSData+String.swift */; };
-		BFD372F01E17842300F29E1D /* NSDate+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CC1E17842300F29E1D /* NSDate+Components.swift */; };
+		BFD372F01E17842300F29E1D /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CC1E17842300F29E1D /* Date+Components.swift */; };
 		BFD372F11E17842300F29E1D /* NSDictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CD1E17842300F29E1D /* NSDictionary+Json.swift */; };
 		BFD372F21E17842300F29E1D /* NSNumber+ Converte.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CE1E17842300F29E1D /* NSNumber+ Converte.swift */; };
 		BFD372F31E17842300F29E1D /* NSObject+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CF1E17842300F29E1D /* NSObject+Class.swift */; };
@@ -63,7 +63,7 @@
 		BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Sublayer.swift"; sourceTree = "<group>"; };
 		BFD372CA1E17842300F29E1D /* NSArray+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+String.swift"; sourceTree = "<group>"; };
 		BFD372CB1E17842300F29E1D /* NSData+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+String.swift"; sourceTree = "<group>"; };
-		BFD372CC1E17842300F29E1D /* NSDate+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Components.swift"; sourceTree = "<group>"; };
+		BFD372CC1E17842300F29E1D /* Date+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
 		BFD372CD1E17842300F29E1D /* NSDictionary+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Json.swift"; sourceTree = "<group>"; };
 		BFD372CE1E17842300F29E1D /* NSNumber+ Converte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+ Converte.swift"; sourceTree = "<group>"; };
 		BFD372CF1E17842300F29E1D /* NSObject+Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Class.swift"; sourceTree = "<group>"; };
@@ -155,9 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */,
+				BFD372CC1E17842300F29E1D /* Date+Components.swift */,
 				BFD372CA1E17842300F29E1D /* NSArray+String.swift */,
 				BFD372CB1E17842300F29E1D /* NSData+String.swift */,
-				BFD372CC1E17842300F29E1D /* NSDate+Components.swift */,
 				BFD372CD1E17842300F29E1D /* NSDictionary+Json.swift */,
 				BFD372CE1E17842300F29E1D /* NSNumber+ Converte.swift */,
 				BFD372CF1E17842300F29E1D /* NSObject+Class.swift */,
@@ -342,7 +342,7 @@
 				BFD3730E1E17842300F29E1D /* UIViewController+Navigation.swift in Sources */,
 				BFD373031E17842300F29E1D /* UISearchBar+Style.swift in Sources */,
 				BFD372F81E17842300F29E1D /* String+Verification.swift in Sources */,
-				BFD372F01E17842300F29E1D /* NSDate+Components.swift in Sources */,
+				BFD372F01E17842300F29E1D /* Date+Components.swift in Sources */,
 				BFD372F11E17842300F29E1D /* NSDictionary+Json.swift in Sources */,
 				BFD372EE1E17842300F29E1D /* NSArray+String.swift in Sources */,
 				BFD372FF1E17842300F29E1D /* UILabel+Size.swift in Sources */,
