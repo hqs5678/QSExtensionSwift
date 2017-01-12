@@ -28,7 +28,8 @@ class ViewController: UIViewController {
         let s = "1..2.3.4.5"
         print(s.toArrayBy(separator: ".."))
         
-        
+     print(str.charAt(index: 2))
+        print(str[0])
         
     }
 
