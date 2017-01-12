@@ -31,6 +31,16 @@ class ViewController: UIViewController {
      print(str.charAt(index: 2))
         print(str[0])
         
+        let num = 1234567
+        print(num[9])
+        
+        
+        let array = Array(arrayLiteral: 1, 2, 3)
+        print(array[2])
+        
+        let a = NSArray(arrayLiteral: 1, 2, 3)
+        print(a[0])
+        
     }
 
     
