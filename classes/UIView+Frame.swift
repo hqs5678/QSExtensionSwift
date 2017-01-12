@@ -31,6 +31,19 @@ extension UIView {
         }
     }
     
+    // MARK: self.frame.origin
+    public var origin: CGPoint {
+        
+        set(newValue) {
+            var frame = self.frame
+            frame.origin = newValue
+            self.frame = frame
+        }
+        get {
+            return self.frame.origin
+        }
+    }
+    
     // MARK: self.frame.size.width
     public var width: CGFloat {
         
@@ -55,7 +68,20 @@ extension UIView {
         get {
             return self.frame.size.height
         }
-    } 
+    }
+    
+    // MARK: self.frame.size
+    public var size: CGSize {
+        
+        set(newValue) {
+            var frame = self.frame
+            frame.size = newValue
+            self.frame = frame
+        }
+        get {
+            return self.frame.size
+        }
+    }
     
     // MARK: 最大的y值  即self的最下面的y 值
     public var maxY: CGFloat {
