@@ -10,6 +10,10 @@ import UIKit
 
 extension String {
     
+    subscript(index: Int) -> String {
+        return self.charAt(index: index)
+    }
+    
     public func substringToIndex(_ index: Int) -> String{
         
         if index < 0 || index > self.length - 1{
@@ -49,6 +53,10 @@ extension String {
     public func indexOf(string: String) -> Int {
         let range = (self as NSString).range(of: string)
         return range.location
+    }
+    
+    public func charAt(index: Int) -> String{
+        return self.substringFromIndex(index, length: 1)
     }
     
 }

@@ -6,7 +6,7 @@ import UIKit
 extension UIView {
     
     // MARK: self.frame.origin.x
-    public var originX: CGFloat {
+    public var x: CGFloat {
         
         set(newValue) {
             var frame = self.frame
@@ -19,7 +19,7 @@ extension UIView {
     }
     
     // MARK: self.frame.origin.y
-    public var originY: CGFloat {
+    public var y: CGFloat {
         
         set(newValue) {
             var frame = self.frame
@@ -31,8 +31,21 @@ extension UIView {
         }
     }
     
+    // MARK: self.frame.origin
+    public var origin: CGPoint {
+        
+        set(newValue) {
+            var frame = self.frame
+            frame.origin = newValue
+            self.frame = frame
+        }
+        get {
+            return self.frame.origin
+        }
+    }
+    
     // MARK: self.frame.size.width
-    public var sizeWidth: CGFloat {
+    public var width: CGFloat {
         
         set(newValue) {
             var frame = self.frame
@@ -45,7 +58,7 @@ extension UIView {
     }
     
     // MARK: self.frame.size.height
-    public var sizeHeight: CGFloat {
+    public var height: CGFloat {
         
         set(newValue) {
             var frame = self.frame
@@ -55,44 +68,64 @@ extension UIView {
         get {
             return self.frame.size.height
         }
-    } 
+    }
+    
+    // MARK: self.frame.size
+    public var size: CGSize {
+        
+        set(newValue) {
+            var frame = self.frame
+            frame.size = newValue
+            self.frame = frame
+        }
+        get {
+            return self.frame.size
+        }
+    }
     
     // MARK: 最大的y值  即self的最下面的y 值
     public var maxY: CGFloat {
         let frame = self.frame
-        return frame.origin.y + frame.size.height
+        return frame.maxY
     }
     
     // MARK: 最大的x值  即self的最右边的x 的值
     public var maxX: CGFloat {
         let frame = self.frame
-        return frame.origin.x + frame.size.width
+        return frame.maxX
     }
     
     // MARK: 当self 在view中居中显示时的 originX
     public func centerXInView(_ view: UIView) -> CGFloat{
         
-        let x = (view.sizeWidth - self.sizeWidth) * 0.5
+        let x = (view.width - self.width) * 0.5
         return x
     }
     
     // MARK: 当self 在view中居中显示时的 originY
     public func centerYInView(_ view: UIView) -> CGFloat{
         
-        let y = (view.sizeHeight - self.sizeHeight) * 0.5
+        let y = (view.height - self.height) * 0.5
         return y
     }
     
     // MARK: 设置self 在view中居中
     public func centerInView(_ view: UIView) {
         
-        let x = (view.sizeWidth - self.sizeWidth) * 0.5
-        let y = (view.sizeHeight - self.sizeHeight) * 0.5
+        let x = centerXInView(view)
+        let y = centerYInView(view)
         
         var frame = self.frame
         frame.origin.x = x
         frame.origin.y = y
         self.frame = frame
+    }
+    
+    // MARK: 设置self 在view中居中
+    public func centerInSuperView() {
+        if let view = self.superview {
+            centerInView(view)
+        }
     }
     
  

@@ -9,7 +9,7 @@
 
 import UIKit
 
-extension Date{
+extension Date {
     
     
     public func components() -> DateComponents {
@@ -89,7 +89,5 @@ extension Date{
         }
         return size[mon - 1]
     }
-    
-    
    
 }
