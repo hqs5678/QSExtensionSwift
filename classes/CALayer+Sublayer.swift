@@ -12,15 +12,11 @@ extension CALayer {
     
     public func removeAllSublayers(){
         let sublayers = self.sublayers
-        guard sublayers != nil else {
-            return
-        }
-        if sublayers!.count == 0 {
-            return
-        }
         
-        for v in sublayers! {
-            v.removeFromSuperlayer()
+        if let sublayers = sublayers {
+            for v in sublayers {
+                v.removeFromSuperlayer()
+            }
         }
     }
 }

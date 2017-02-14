@@ -41,6 +41,11 @@ class ViewController: UIViewController {
         let a = NSArray(arrayLiteral: 1, 2, 3)
         print(a[0])
         
+        
+        self.view.addTapWithHandle { (tap) in
+            
+        }
+        
     }
 
     
