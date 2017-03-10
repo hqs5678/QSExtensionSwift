@@ -198,4 +198,8 @@ extension String {
         return Int(self)!
     }
     
+    public var floatValue: Float {
+        return Float(self)!
+    }
+    
 }
