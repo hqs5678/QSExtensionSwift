@@ -13,7 +13,12 @@ extension Data{
     
     public func toString() -> String{
         let str = NSString(data: self, encoding: String.Encoding.utf8.rawValue)
-        return str as! String
+        if let str = str? {
+            return str
+        }
+        else{
+            return ""
+        }
     }
     
     public func toJsonObject() -> AnyObject {
