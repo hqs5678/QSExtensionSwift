@@ -13,6 +13,7 @@
 		18614E8F1E02523600E0E967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18614E8E1E02523600E0E967 /* Assets.xcassets */; };
 		18614E921E02523600E0E967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18614E901E02523600E0E967 /* LaunchScreen.storyboard */; };
 		B3758AC59F2C134300B26655 /* Pods_QSExtensionSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CEAF04B2CF0DA073FA4F57 /* Pods_QSExtensionSwift.framework */; };
+		BFA366C01ED53D660038341A /* CALayer+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA366BF1ED53D660038341A /* CALayer+Frame.swift */; };
 		BFD372ED1E17842300F29E1D /* CALayer+Sublayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */; };
 		BFD372EE1E17842300F29E1D /* NSArray+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CA1E17842300F29E1D /* NSArray+String.swift */; };
 		BFD372EF1E17842300F29E1D /* NSData+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CB1E17842300F29E1D /* NSData+String.swift */; };
@@ -60,6 +61,7 @@
 		18614E931E02523600E0E967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47CB6FEA9C32367795623B98 /* Pods-QSExtensionSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSExtensionSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-QSExtensionSwift/Pods-QSExtensionSwift.release.xcconfig"; sourceTree = "<group>"; };
 		47CEAF04B2CF0DA073FA4F57 /* Pods_QSExtensionSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QSExtensionSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA366BF1ED53D660038341A /* CALayer+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Frame.swift"; path = "classes/CALayer+Frame.swift"; sourceTree = SOURCE_ROOT; };
 		BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Sublayer.swift"; sourceTree = "<group>"; };
 		BFD372CA1E17842300F29E1D /* NSArray+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+String.swift"; sourceTree = "<group>"; };
 		BFD372CB1E17842300F29E1D /* NSData+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+String.swift"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */,
+				BFA366BF1ED53D660038341A /* CALayer+Frame.swift */,
 				BFD372CC1E17842300F29E1D /* Date+Components.swift */,
 				BFD372CA1E17842300F29E1D /* NSArray+String.swift */,
 				BFD372CB1E17842300F29E1D /* NSData+String.swift */,
@@ -361,6 +364,7 @@
 				BFD373051E17842300F29E1D /* UITableViewCell+Style.swift in Sources */,
 				BFD3730A1E17842300F29E1D /* UIView+Frame.swift in Sources */,
 				BFD373081E17842300F29E1D /* UIView+Appearance.swift in Sources */,
+				BFA366C01ED53D660038341A /* CALayer+Frame.swift in Sources */,
 				BFD373091E17842300F29E1D /* UIView+Constaint.swift in Sources */,
 				BFD372FB1E17842300F29E1D /* UIImage+Color.swift in Sources */,
 			);
