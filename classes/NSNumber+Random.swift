@@ -25,7 +25,7 @@ extension Int {
     
     // min ... max
     public static func random(min: Int, max: Int) -> Int{
-        return Int(arc4random() % UInt32(max + 1)) + min
+        return Int(arc4random_uniform(UInt32(max + 1))) + min
     }
 }
 
@@ -46,7 +46,7 @@ extension Int32 {
     
     // min ... max
     public static func random(min: Int32, max: Int32) -> Int32{
-        return Int32(arc4random() % UInt32(max + 1)) + min
+        return Int32(arc4random_uniform(UInt32(max + 1))) + min
     }
 }
 
@@ -67,7 +67,7 @@ extension UInt32 {
     
     // min ... max
     public static func random(min: UInt32, max: UInt32) -> UInt32{
-        return arc4random() % (max + 1) + min
+        return arc4random_uniform(max + 1) + min
     }
 }
 

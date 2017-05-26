@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         for _ in 1 ... 2000000 {
-            let n = UInt32.random().intValue
-            if n == 0 {
+            let n = Int.random(100)
+            if n == 0 || n == 100{
                 print("-------------------------\(n)")
             }
             else{
