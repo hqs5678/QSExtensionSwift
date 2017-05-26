@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         
         str = "http://www.baidu.com"
         print(str.trim("http://"))
+        
+        
+        var s: String?
+        s = "  "
+        print(s.length)
+        print(s.isBlank)
     }
 
     

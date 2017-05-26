@@ -14,6 +14,10 @@ extension String {
         return self.characters.count
     }
     
+    public var isBlank: Bool {
+        return self.length == 0
+    }
+    
     public func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
         let newStr:NSString = NSString(string: self)
         
@@ -45,4 +49,15 @@ extension String {
         }
     }
     
+}
+
+extension Optional where Wrapped == String {
+    
+    public var isBlank: Bool {
+        return self?.isBlank ?? true
+    }
+    
+    public var length: Int {
+        return self?.characters.count ?? 0
+    }
 }
