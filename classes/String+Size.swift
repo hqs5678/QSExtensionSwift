@@ -15,7 +15,7 @@ extension String {
     }
     
     public var isBlank: Bool {
-        return self.length == 0
+        return self.trim().isEmpty
     }
     
     public func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
