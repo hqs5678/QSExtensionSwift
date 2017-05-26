@@ -12,10 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
-        for _ in 1 ... 200 {
-            print(arc4random())
+        for _ in 1 ... 2000000 {
+            let n = UInt32.random().intValue
+            if n == 0 {
+                print("-------------------------\(n)")
+            }
+            else{
+                print(n)
+            }
+            
         }
         
         
