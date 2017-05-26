@@ -13,19 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        var str = "     123   "
-        str = str.trim()
-        print(str)
-        print(str.length)
         
-        str = "http://www.baidu.com"
-        print(str.trim("http://"))
+        for _ in 1 ... 200 {
+            print(arc4random())
+        }
         
         
-        var s: String?
-        s = "  "
-        print(s.length)
-        print(s.isBlank)
+        
     }
 
     

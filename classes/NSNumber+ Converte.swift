@@ -10,6 +10,7 @@ import UIKit
 
 extension Int {
     
+    // 数字下标
     subscript(digitIndex: Int) -> Int {
         var decimalBase = 1
         for _ in 0..<digitIndex {
@@ -104,6 +105,9 @@ extension UInt {
     }
     
     public var intValue: Int {
+        if self.doubleValue > Int.max.doubleValue {
+            return -1
+        }
         return Int(self)
     }
 }
@@ -127,6 +131,9 @@ extension UInt32 {
     }
     
     public var intValue: Int {
+        if self.doubleValue > Int.max.doubleValue {
+            return -1
+        }
         return Int(self)
     }
 }
@@ -150,6 +157,9 @@ extension UInt64 {
     }
     
     public var intValue: Int {
+        if self.doubleValue > Int.max.doubleValue {
+            return -1
+        }
         return Int(self)
     }
 }
@@ -157,6 +167,9 @@ extension UInt64 {
 extension Float {
     
     public var intValue: Int {
+        if self.doubleValue > Int.max.doubleValue {
+            return -1
+        }
         return Int(self)
     }
     
