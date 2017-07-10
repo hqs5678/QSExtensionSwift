@@ -13,7 +13,7 @@ platform :ios, '8.0'
 
 target 'TargetName' do
 
-pod 'QSExtensionSwift', '~> 1.0.7'
+pod 'QSExtensionSwift'
 
 end
 ```
