@@ -14,14 +14,24 @@ extension String {
         return self.characters.count
     }
     
+    public var isBlank: Bool {
+        return self.trim().isEmpty
+    }
+    
     public func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
         let newStr:NSString = NSString(string: self)
         
         return newStr.boundingRect(with: size, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:font], context: nil)
     }
     
+    // 去除字符串前后字符
+    public func trim(_ characters: String) -> String{
+        return self.trimmingCharacters(in: CharacterSet(charactersIn: characters))
+    }
+    
+    // 去除字符串前后空格
     public func trim() -> String {
-        return self.trimmingCharacters(in: CharacterSet(charactersIn: " "))
+        return self.trimmingCharacters(in: .whitespaces)
     }
     
     public func toDataValue() -> Data? {
@@ -39,4 +49,15 @@ extension String {
         }
     }
     
+}
+
+extension Optional where Wrapped == String {
+    
+    public var isBlank: Bool {
+        return self?.isBlank ?? true
+    }
+    
+    public var length: Int {
+        return self?.characters.count ?? 0
+    }
 }

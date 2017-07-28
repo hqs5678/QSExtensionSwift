@@ -14,6 +14,7 @@
 		18614E921E02523600E0E967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18614E901E02523600E0E967 /* LaunchScreen.storyboard */; };
 		B3758AC59F2C134300B26655 /* Pods_QSExtensionSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CEAF04B2CF0DA073FA4F57 /* Pods_QSExtensionSwift.framework */; };
 		BFA366C01ED53D660038341A /* CALayer+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA366BF1ED53D660038341A /* CALayer+Frame.swift */; };
+		BFA366C21ED7D0980038341A /* NSNumber+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA366C11ED7D0980038341A /* NSNumber+Random.swift */; };
 		BFD372ED1E17842300F29E1D /* CALayer+Sublayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */; };
 		BFD372EE1E17842300F29E1D /* NSArray+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CA1E17842300F29E1D /* NSArray+String.swift */; };
 		BFD372EF1E17842300F29E1D /* NSData+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD372CB1E17842300F29E1D /* NSData+String.swift */; };
@@ -62,6 +63,7 @@
 		47CB6FEA9C32367795623B98 /* Pods-QSExtensionSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSExtensionSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-QSExtensionSwift/Pods-QSExtensionSwift.release.xcconfig"; sourceTree = "<group>"; };
 		47CEAF04B2CF0DA073FA4F57 /* Pods_QSExtensionSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QSExtensionSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA366BF1ED53D660038341A /* CALayer+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Frame.swift"; path = "classes/CALayer+Frame.swift"; sourceTree = SOURCE_ROOT; };
+		BFA366C11ED7D0980038341A /* NSNumber+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSNumber+Random.swift"; path = "classes/NSNumber+Random.swift"; sourceTree = SOURCE_ROOT; };
 		BFD372C91E17842300F29E1D /* CALayer+Sublayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Sublayer.swift"; sourceTree = "<group>"; };
 		BFD372CA1E17842300F29E1D /* NSArray+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+String.swift"; sourceTree = "<group>"; };
 		BFD372CB1E17842300F29E1D /* NSData+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+String.swift"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				BFD372CB1E17842300F29E1D /* NSData+String.swift */,
 				BFD372CD1E17842300F29E1D /* NSDictionary+Json.swift */,
 				BFD372CE1E17842300F29E1D /* NSNumber+ Converte.swift */,
+				BFA366C11ED7D0980038341A /* NSNumber+Random.swift */,
 				BFD372CF1E17842300F29E1D /* NSObject+Class.swift */,
 				BFD372D01E17842300F29E1D /* String+Json.swift */,
 				BFD372D11E17842300F29E1D /* String+Security.swift */,
@@ -342,6 +345,7 @@
 				BFD373101E17842300F29E1D /* UIViewController+Toast.swift in Sources */,
 				BFD373021E17842300F29E1D /* UINavigationController+Navigation.swift in Sources */,
 				BFD372F31E17842300F29E1D /* NSObject+Class.swift in Sources */,
+				BFA366C21ED7D0980038341A /* NSNumber+Random.swift in Sources */,
 				BFD3730E1E17842300F29E1D /* UIViewController+Navigation.swift in Sources */,
 				BFD373031E17842300F29E1D /* UISearchBar+Style.swift in Sources */,
 				BFD372F81E17842300F29E1D /* String+Verification.swift in Sources */,
