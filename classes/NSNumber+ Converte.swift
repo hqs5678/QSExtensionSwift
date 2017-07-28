@@ -18,8 +18,8 @@ extension Int {
         }
         return (self / decimalBase) % 10
     }
-  
-    public var cgFloatValue: CGFloat {
+    
+    public var f: CGFloat {
         return CGFloat(self)
     }
     
@@ -42,7 +42,7 @@ extension Int {
 
 extension Int32 {
     
-    public var cgFloatValue: CGFloat {
+    public var f: CGFloat {
         return CGFloat(self)
     }
     
@@ -65,7 +65,7 @@ extension Int32 {
 
 extension Int64 {
     
-    public var cgFloatValue: CGFloat {
+    public var f: CGFloat {
         return CGFloat(self)
     }
     
@@ -88,7 +88,7 @@ extension Int64 {
 
 extension UInt {
     
-    public var cgFloatValue: CGFloat {
+    public var f: CGFloat {
         return CGFloat(self)
     }
     
@@ -114,7 +114,7 @@ extension UInt {
 
 extension UInt32 {
     
-    public var cgFloatValue: CGFloat {
+    public var f: CGFloat {
         return CGFloat(self)
     }
     
@@ -140,7 +140,7 @@ extension UInt32 {
 
 extension UInt64 {
     
-    public var cgFloatValue: CGFloat {
+    public var f: CGFloat {
         return CGFloat(self)
     }
     
@@ -173,12 +173,12 @@ extension Float {
         return Int(self)
     }
     
-    public var stringValue: String {
-        return "\(self)"
+    public var f: CGFloat {
+        return CGFloat(self)
     }
     
-    public var cgFloatValue: CGFloat {
-        return CGFloat(self)
+    public var stringValue: String {
+        return "\(self)"
     }
     
     public var doubleValue: Double {
@@ -208,11 +208,27 @@ extension CGFloat {
 extension String {
     
     public var intValue: Int {
-        return Int(self)!
+        let i = Int(self)
+        if let i = i {
+            return i
+        }
+        return 0
+    }
+    
+    public var f: CGFloat {
+        let i = Float(self)
+        if let i = i {
+            return i.f
+        }
+        return 0
     }
     
     public var floatValue: Float {
-        return Float(self)!
+        let i = Float(self)
+        if let i = i {
+            return i
+        }
+        return 0
     }
     
 }
