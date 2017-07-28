@@ -10,8 +10,14 @@ import UIKit
 
 extension NSObject {
     
-    public func klassName() -> String{
+    public var className: String {
         return "\(self.classForCoder)"
+    }
+    
+    static var className: String {
+        get {
+            return self.description().components(separatedBy: ".").last!
+        }
     }
 
 }

@@ -13,18 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for _ in 1 ... 2000000 {
-            let n = Int.random(100)
-            if n == 0 || n == 100{
-                print("-------------------------\(n)")
-            }
-            else{
-                print(n)
-            }
-            
-        }
         
+        print(self.className)
         
+        print(ViewController.className)
         
     }
 
