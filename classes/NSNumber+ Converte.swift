@@ -205,6 +205,21 @@ extension CGFloat {
     }
 }
 
+extension Double {
+    
+    public var intValue: Int {
+        return Int(self)
+    }
+    
+    public var stringValue: String {
+        return "\(self)"
+    }
+    
+    public var f: CGFloat {
+        return CGFloat(self)
+    }
+}
+
 extension String {
     
     public var intValue: Int {
