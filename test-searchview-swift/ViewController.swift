@@ -14,9 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        print(self.className)
         
+        print(self.className)
         print(ViewController.className)
+        
+        print(ClassName(self))
+        print(ClassName(ViewController.self))
+        
+        let s = Student()
+        print(ClassName(s))
+        print(ClassName(Student.self))
         
     }
 
@@ -24,5 +31,8 @@ class ViewController: UIViewController {
     
 
 
+}
+
+class Student {
 }
 
