@@ -14,22 +14,21 @@ extension NSObject {
         return "\(self.classForCoder)"
     }
     
-    static var className: String {
+    public static var className: String {
         return self.description().components(separatedBy: ".").last!
     }
-
+    
 }
 
 
-func ClassName(_ object: AnyObject) -> String{
+public func ClassName(_ object: AnyObject) -> String{
     return object.description.components(separatedBy: ".").last!
 }
 
-func ClassName(_ object: NSObject) -> String{
+public func ClassName(_ object: NSObject) -> String{
     return object.className
 }
 
-func ClassName(_ object: AnyClass) -> String{
+public func ClassName(_ object: AnyClass) -> String{
     return object.description().components(separatedBy: ".").last!
 }
-
