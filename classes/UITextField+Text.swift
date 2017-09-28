@@ -12,7 +12,7 @@ extension UITextField {
     
     public var textLength: Int {
         if let text = self.text {
-            return text.length
+            return text.count
         }
         return 0
     }
@@ -44,7 +44,7 @@ extension UITextField {
                 }
             }
             
-            if text.length == 1 {
+            if text.count == 1 {
                 if text == "0" {
                     if replaceString.characters.first == "0" {
                         return false
@@ -56,7 +56,7 @@ extension UITextField {
                 }
             }
             
-            if text.length == 0 {
+            if text.count == 0 {
                 if replaceString.characters.first == "." {
                     return false
                 }
@@ -89,7 +89,7 @@ extension UITextField {
         let number = "1234567890"
         
         if let text = self.text {
-            if replaceString.characters.first == "0" && text.length == 0 {
+            if replaceString.characters.first == "0" && text.count == 0 {
                 return false
             }
         }

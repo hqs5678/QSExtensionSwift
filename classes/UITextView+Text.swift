@@ -10,9 +10,9 @@ import UIKit
 
 extension UITextView {
     
-    public var textLength: Int {
+    public var count: Int {
         if let text = self.text {
-            return text.length
+            return text.count
         }
         return 0
     }

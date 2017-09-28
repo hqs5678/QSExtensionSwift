@@ -16,7 +16,7 @@ extension String {
     
     public func substringToIndex(_ index: Int) -> String{
         
-        if index < 0 || index > self.length - 1{
+        if index < 0 || index > self.count - 1{
             return "fatal index"
         }
         let endIndex = self.index(self.startIndex, offsetBy: index) as Index
@@ -25,7 +25,7 @@ extension String {
     
     public func substringFromIndex(_ index: Int) -> String{
         
-        if index < 0 || index > self.length - 1{
+        if index < 0 || index > self.count - 1{
             return "fatal index"
         }
         let startIndex = self.index(self.startIndex, offsetBy: index)
@@ -41,7 +41,7 @@ extension String {
     
     public func substringFromIndex(_ from: Int, toIndex to: Int) -> String {
         
-        if from < 0 || from > self.length - 1 || to > self.length || to < 0 || from > to {
+        if from < 0 || from > self.count - 1 || to > self.count || to < 0 || from > to {
             return "fatal index"
         }
         let startIndex = self.index(self.startIndex, offsetBy: from)

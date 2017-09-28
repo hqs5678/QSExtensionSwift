@@ -12,7 +12,7 @@ extension UILabel {
     
     public var textLength: Int {
         if let text = self.text {
-            return text.length
+            return text.count
         }
         return 0
     }

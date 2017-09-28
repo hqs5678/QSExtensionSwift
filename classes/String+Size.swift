@@ -10,14 +10,6 @@ import UIKit
 
 extension String {
     
-    public var length: Int {
-        return self.characters.count
-    }
-    
-    public var isBlank: Bool {
-        return self.trim().isEmpty
-    }
-    
     public func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
         let newStr:NSString = NSString(string: self)
         
@@ -40,7 +32,7 @@ extension String {
     
     
     public func toArrayBy(separator: String) -> NSArray!{
-        if self.length > 1 {
+        if self.count > 1 {
             let array = self.components(separatedBy: separator)
             return array as NSArray!
         }
@@ -53,11 +45,7 @@ extension String {
 
 extension Optional where Wrapped == String {
     
-    public var isBlank: Bool {
-        return self?.isBlank ?? true
-    }
-    
-    public var length: Int {
-        return self?.characters.count ?? 0
+    public var isEmpty: Bool {
+        return self?.isEmpty ?? true
     }
 }
