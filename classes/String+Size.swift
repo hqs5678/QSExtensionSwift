@@ -13,7 +13,7 @@ extension String {
     public func boundWithSize(_ size:CGSize ,font:UIFont) -> CGRect{
         let newStr:NSString = NSString(string: self)
         
-        return newStr.boundingRect(with: size, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName:font], context: nil)
+        return newStr.boundingRect(with: size, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
     }
     
     // 去除字符串前后字符
