@@ -48,4 +48,11 @@ extension Optional where Wrapped == String {
     public var isEmpty: Bool {
         return self?.isEmpty ?? true
     }
+    
+    public var count: Int {
+        if let s = self {
+            return s.count
+        }
+        return 0
+    }
 }
