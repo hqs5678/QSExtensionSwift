@@ -13,18 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        print(self.className)
-        print(ViewController.className)
-        
-        print(ClassName(self))
-        print(ClassName(ViewController.self))
-        
-        let s = Student()
-        print(ClassName(s))
-        print(ClassName(Student.self))
-        
+        let str = "123456"
+        print(str.substringTo(6))
+        print(str.substringFrom(6))
+        print(str.substringFrom(0, toIndex: 7))
     }
 
     
