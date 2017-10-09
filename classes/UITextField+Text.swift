@@ -28,7 +28,7 @@ extension UITextField {
     }
     
     public func setPlaceholderTextColor(_ color: UIColor) {
-        self.attributedPlaceholder = NSMutableAttributedString(string: self.placeholder!, attributes: [NSForegroundColorAttributeName : color])
+        self.attributedPlaceholder = NSMutableAttributedString(string: self.placeholder!, attributes: [NSAttributedStringKey.foregroundColor : color])
     }
     
     // MARK: 过滤作用, 用在代理方法中, 设置输入内容为Float

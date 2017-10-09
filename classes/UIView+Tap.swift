@@ -19,7 +19,7 @@ extension UIView {
         setTapHandle(tmpClass)
     }
     
-    public func onTapGestureRecognizerHandle(_ tap: UITapGestureRecognizer){
+    @objc public func onTapGestureRecognizerHandle(_ tap: UITapGestureRecognizer){
         
         let tmpClass = objc_getAssociatedObject(self, &AssociatedKeys.tapHandlePer) as? TmpHandleClass
         if tmpClass != nil {
