@@ -14,7 +14,7 @@ extension UILabel {
     public func setFontColor(_ fontColor: UIColor, range: NSRange){
         
         let attributedString = NSMutableAttributedString(attributedString: self.attributedText!)
-        attributedString.addAttribute(NSForegroundColorAttributeName, value: fontColor, range: range)
+        attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: fontColor, range: range)
         
         self.attributedText = attributedString
     }
@@ -25,7 +25,7 @@ extension UILabel {
         let len = (self.text! as NSString).length
         let range = NSMakeRange(0, len)
         let attributedString = NSMutableAttributedString(attributedString: self.attributedText!)
-        let sourceParagraphStyle = attributedString.attribute(NSParagraphStyleAttributeName, at: 0, longestEffectiveRange: nil, in: range)!
+        let sourceParagraphStyle = attributedString.attribute(NSAttributedStringKey.paragraphStyle, at: 0, longestEffectiveRange: nil, in: range)!
         
         let paragraphStyle = NSMutableParagraphStyle()
         
@@ -33,7 +33,7 @@ extension UILabel {
         paragraphStyle.firstLineHeadIndent = (sourceParagraphStyle as AnyObject).firstLineHeadIndent
         paragraphStyle.paragraphSpacing = 0
         paragraphStyle.minimumLineHeight = 4
-        attributedString.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: range)
+        attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: range)
         
         self.attributedText = attributedString
     }
@@ -44,14 +44,14 @@ extension UILabel {
         let len = (self.text! as NSString).length
         let range = NSMakeRange(0, len)
         let attributedString = NSMutableAttributedString(attributedString: self.attributedText!)
-        let sourceParagraphStyle = attributedString.attribute(NSParagraphStyleAttributeName, at: 0, longestEffectiveRange: nil, in: range)!
+        let sourceParagraphStyle = attributedString.attribute(NSAttributedStringKey.paragraphStyle, at: 0, longestEffectiveRange: nil, in: range)!
         
         let paragraphStyle = NSMutableParagraphStyle()
         
         paragraphStyle.lineSpacing = (sourceParagraphStyle as AnyObject).lineSpacing
         paragraphStyle.firstLineHeadIndent = indentation
         
-        attributedString.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: range)
+        attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: range)
         
         self.attributedText = attributedString
     }
