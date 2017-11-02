@@ -13,18 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let str = "123456"
-        print(str.substringTo(6))
-        print(str.substringFrom(6))
-        print(str.substringFrom(0, toIndex: 7))
+        self.view.addTapWithHandle { (tap) in
+            
+            print(Date.timestamp)
+        }
     }
 
-    
-    
-
-
-}
-
-class Student {
 }
 

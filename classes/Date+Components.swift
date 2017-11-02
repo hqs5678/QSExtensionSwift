@@ -11,6 +11,10 @@ import UIKit
 
 extension Date {
     
+    public static var timestamp: Int {
+        let date = Date()
+        return (date.timeIntervalSince1970 * 1000).intValue
+    }
     
     public func components() -> DateComponents {
         let c = Calendar(identifier: Calendar.Identifier.republicOfChina)
