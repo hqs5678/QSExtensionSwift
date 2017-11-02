@@ -14,40 +14,39 @@ extension String {
         return self.charAt(index: index)
     }
     
-    public func substringToIndex(_ index: Int) -> String{
+    public func substringTo(_ index: Int) -> String{
         
-        if index < 0 || index > self.count - 1{
+        if index < 0 || index > self.count{
             return "fatal index"
         }
         let endIndex = self.index(self.startIndex, offsetBy: index) as Index
-        return self.substring(to: endIndex)
+        return String(self[..<endIndex])
     }
     
-    public func substringFromIndex(_ index: Int) -> String{
+    public func substringFrom(_ index: Int) -> String{
         
         if index < 0 || index > self.count - 1{
             return "fatal index"
         }
         let startIndex = self.index(self.startIndex, offsetBy: index)
-        return self.substring(from: startIndex)
+        return String(self[startIndex...])
     }
     
-    public func substringFromIndex(_ from: Int, length len: Int) -> String {
+    public func substringFrom(_ index: Int, length len: Int) -> String {
         
-        let to = from + len
-        return self.substringFromIndex(from, toIndex: to)
+        let to = index + len
+        return self.substringFrom(index, toIndex: to)
     }
 
     
-    public func substringFromIndex(_ from: Int, toIndex to: Int) -> String {
+    public func substringFrom(_ index: Int, toIndex to: Int) -> String {
         
-        if from < 0 || from > self.count - 1 || to > self.count || to < 0 || from > to {
+        if index < 0 || index > self.count - 1 || to > self.count || to < 0 || index > to {
             return "fatal index"
         }
-        let startIndex = self.index(self.startIndex, offsetBy: from)
+        let startIndex = self.index(self.startIndex, offsetBy: index)
         let endIndex = self.index(self.startIndex, offsetBy: to)
-        let range = Range(uncheckedBounds: (startIndex, endIndex))
-        return self.substring(with: range)
+        return String(self[startIndex..<endIndex])
     }
     
     public func indexOf(string: String) -> Int {
@@ -56,7 +55,7 @@ extension String {
     }
     
     public func charAt(index: Int) -> String{
-        return self.substringFromIndex(index, length: 1)
+        return self.substringFrom(index, length: 1)
     }
     
 }
