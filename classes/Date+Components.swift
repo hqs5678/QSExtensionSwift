@@ -11,9 +11,9 @@ import UIKit
 
 extension Date {
     
-    public static var timestamp: Int {
+    public static var timestamp: Int64 {
         let date = Date()
-        return (date.timeIntervalSince1970 * 1000).intValue
+        return (date.timeIntervalSince1970 * 1000).int64Value
     }
     
     public func components() -> DateComponents {

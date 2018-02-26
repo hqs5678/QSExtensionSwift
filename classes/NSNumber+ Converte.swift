@@ -210,7 +210,9 @@ extension Double {
     public var intValue: Int {
         return Int(self)
     }
-    
+    public var int64Value: Int64 {
+        return Int64(self)
+    }
     public var stringValue: String {
         return "\(self)"
     }
