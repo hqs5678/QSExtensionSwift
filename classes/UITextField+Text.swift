@@ -37,7 +37,7 @@ extension UITextField {
         let number = "1234567890."
         var dotCount = 0
         if let text = self.text {
-            for ch in text.characters {
+            for ch in text {
                 if ch == "." {
                     dotCount = 1
                     break
@@ -46,10 +46,10 @@ extension UITextField {
             
             if text.count == 1 {
                 if text == "0" {
-                    if replaceString.characters.first == "0" {
+                    if replaceString.first == "0" {
                         return false
                     }
-                    else if replaceString.characters.first != "." {
+                    else if replaceString.first != "." {
                         self.text = replaceString
                         return false
                     }
@@ -57,7 +57,7 @@ extension UITextField {
             }
             
             if text.count == 0 {
-                if replaceString.characters.first == "." {
+                if replaceString.first == "." {
                     return false
                 }
             }
@@ -65,7 +65,7 @@ extension UITextField {
         
         
         
-        for ch in replaceString.characters {
+        for ch in replaceString {
             
             if number.contains("\(ch)") {
                 if ch == "." {
@@ -89,13 +89,13 @@ extension UITextField {
         let number = "1234567890"
         
         if let text = self.text {
-            if replaceString.characters.first == "0" && text.count == 0 {
+            if replaceString.first == "0" && text.count == 0 {
                 return false
             }
         }
         
         
-        for ch in replaceString.characters {
+        for ch in replaceString {
             
             if number.contains("\(ch)") {
                 continue
